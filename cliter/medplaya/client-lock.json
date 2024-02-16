@@ -1,0 +1,765 @@
+{
+    "version": "0.0.1",
+    "files": [
+        {
+            "path": "src/@app/medplaya/index.ts",
+            "integrity": "sha1:99c83eeb4dcf5a407a8de72e044443b960c7a1e3"
+        },
+        {
+            "path": "src/@app/medplaya/medplaya.seed.ts",
+            "integrity": "sha1:61b0aa1ba1002473c70936f5984d0a993f63eb19"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/create/medplaya-create-clients.command-handler.spec.ts",
+            "integrity": "sha1:68dfe7026b757f6cfa220a45b47eaec20258bd73"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/create/medplaya-create-clients.command-handler.ts",
+            "integrity": "sha1:baa715c3a968ca9f002670c492dc839b6bab87ca"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/create/medplaya-create-clients.command.ts",
+            "integrity": "sha1:a0513cdedbb8b425df5054317a6219185abf67d0"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/create/medplaya-create-clients.service.spec.ts",
+            "integrity": "sha1:a74568f7d963b08f9d24b3c69b128a8e693331be"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/create/medplaya-create-clients.service.ts",
+            "integrity": "sha1:792d507de47556683a44f283b876d25ce84634e3"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/create/medplaya-create-client.command-handler.spec.ts",
+            "integrity": "sha1:f5cfd8ed3fd14ec7ea8d9efd17353f20b8ec7971"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/create/medplaya-create-client.command-handler.ts",
+            "integrity": "sha1:99c5392c1120bf8dc9929779ea357ff7fc0bc69d"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/create/medplaya-create-client.command.ts",
+            "integrity": "sha1:22f05b0da8499db20a5e1c80218cf41858181e1f"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/create/medplaya-create-client.service.spec.ts",
+            "integrity": "sha1:d020041235ca1bde329d372edf6e3d3bc8ad9369"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/create/medplaya-create-client.service.ts",
+            "integrity": "sha1:cef6d91cb8a4570cb798fa3c4aba432eecb1aee5"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/delete/medplaya-delete-clients.command-handler.spec.ts",
+            "integrity": "sha1:7b624ca6c10db7ea246fbfad1f22718755735dc2"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/delete/medplaya-delete-clients.command-handler.ts",
+            "integrity": "sha1:fd64a89a438f6a9f6b366b44dc72319736b6e071"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/delete/medplaya-delete-clients.command.ts",
+            "integrity": "sha1:685db055eba247bd915aa8ff862a1752666403d1"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/delete/medplaya-delete-clients.service.spec.ts",
+            "integrity": "sha1:7505ba9938ccd742d1aab9e4d7e0f261a8404ba6"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/delete/medplaya-delete-clients.service.ts",
+            "integrity": "sha1:ec2b0f9d4fddb794102b43d121d0acdee4fee71c"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/delete/medplaya-delete-client-by-id.command-handler.spec.ts",
+            "integrity": "sha1:cf3c2b2b12453bf6ab4d0b350512ebdb930c8ed5"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/delete/medplaya-delete-client-by-id.command-handler.ts",
+            "integrity": "sha1:0b61fa9a330da0b5299bae4576dabfb54d703f02"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/delete/medplaya-delete-client-by-id.command.ts",
+            "integrity": "sha1:b3169ebc50c54f55cc6bf7a3b036a7feaafb49df"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/delete/medplaya-delete-client-by-id.service.spec.ts",
+            "integrity": "sha1:884d7dbe0330906d3493abbebfad37b0271ccfe9"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/delete/medplaya-delete-client-by-id.service.ts",
+            "integrity": "sha1:315a4e3f3c3093d45ce1027b54565431006fc8de"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-add-clients-context.event.ts",
+            "integrity": "sha1:b7534617d0848814e93690695736e7f6bb34bd8b"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-created-clients.event-handler.ts",
+            "integrity": "sha1:759a80c0a777ff4223d751f4e9a603dab97477a2"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-created-clients.event.ts",
+            "integrity": "sha1:a6b3e81854c682312a007c6d1aa34715bdae1cfc"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-created-client.event-handler.ts",
+            "integrity": "sha1:5a5bd9387ece7f9a034d1bd75108de27298d136a"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-created-client.event.ts",
+            "integrity": "sha1:5dc7813376966eef6fff4ebca56186a2d6cbe763"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-deleted-clients.event-handler.ts",
+            "integrity": "sha1:c5d16ae3ea254e84a1bcf74cce9cbb67a18da2c0"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-deleted-clients.event.ts",
+            "integrity": "sha1:c425ae14ebec3a52bcd7a253a638673af4299eab"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-deleted-client.event-handler.ts",
+            "integrity": "sha1:5f306f38135782f69e9b1dcfdf9851558004783e"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-deleted-client.event.ts",
+            "integrity": "sha1:ebc8ac2b19bd9eac9a8c2fb4319088b86edb127b"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-updated-and-incremented-clients.event-handler.ts",
+            "integrity": "sha1:7097a3e5f6ac39e47c1f974518c09b86d1927434"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-updated-and-incremented-clients.event.ts",
+            "integrity": "sha1:d964786c15bc191d2dfd373a9cda587b5d782f1b"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-updated-and-incremented-client.event.ts",
+            "integrity": "sha1:c9f20835616703c7639e95e68023e320e4a5ad14"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-updated-clients.event-handler.ts",
+            "integrity": "sha1:7e3e38635baad7fa63117c757c3c841d3872f403"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-updated-clients.event.ts",
+            "integrity": "sha1:1d3c6ca334acec24cbd7e293df2d1342723ce353"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-updated-client.event-handler.ts",
+            "integrity": "sha1:ddb8fb75513e1e5086542c7811cbd308e474df49"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/events/medplaya-updated-client.event.ts",
+            "integrity": "sha1:12d9acca727de3e61bd733caf75e966797d18516"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/find/medplaya-find-client-by-id.query-handler.spec.ts",
+            "integrity": "sha1:e8b49b2ee7c93e05cc94e7e22be96f228110e5e1"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/find/medplaya-find-client-by-id.query-handler.ts",
+            "integrity": "sha1:c3117cb03c9752a13bbd7943925fc310a0bb5d42"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/find/medplaya-find-client-by-id.query.ts",
+            "integrity": "sha1:901a07de3589dd48595d18df8a3fc68bbd1c0d7f"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/find/medplaya-find-client-by-id.service.spec.ts",
+            "integrity": "sha1:449303d7f499eddc7c2e58f4c9d2a7ccac254fc2"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/find/medplaya-find-client-by-id.service.ts",
+            "integrity": "sha1:baf850a1d9d8a20f8b26ca336f98946a9c32aeea"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/find/medplaya-find-client.query-handler.spec.ts",
+            "integrity": "sha1:02f6f3a31177bc16afdd7760de0da9e30152fde2"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/find/medplaya-find-client.query-handler.ts",
+            "integrity": "sha1:b6cf3f963ebe51d287f7ac313ad950e562df9bed"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/find/medplaya-find-client.query.ts",
+            "integrity": "sha1:e55bb4cbb9d6a01a40afd3db2980056ffa88a943"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/find/medplaya-find-client.service.spec.ts",
+            "integrity": "sha1:c2400138c5187443661db9f50d332ddf9636b33d"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/find/medplaya-find-client.service.ts",
+            "integrity": "sha1:df6a445c8f3cddb42ffb0bff94d43dcca6615e04"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/get/medplaya-get-clients.query-handler.spec.ts",
+            "integrity": "sha1:674db08cbb7492fe99c1f9042ff428f1e74e2e9d"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/get/medplaya-get-clients.query-handler.ts",
+            "integrity": "sha1:2aeeaccc01973bec5e06d74109eeea07e5bcee3e"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/get/medplaya-get-clients.query.ts",
+            "integrity": "sha1:ca251f096dd2a73b5462cb6bcc086d1744c78a94"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/get/medplaya-get-clients.service.spec.ts",
+            "integrity": "sha1:50634367f3df5764328762106cc854ecff36f8ea"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/get/medplaya-get-clients.service.ts",
+            "integrity": "sha1:22a2514c56fcd60558bd9457c2aa37b8069d4c20"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/paginate/medplaya-paginate-clients.query-handler.spec.ts",
+            "integrity": "sha1:67effc50ca382a6714da6470ce984bf1ba7f11d2"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/paginate/medplaya-paginate-clients.query-handler.ts",
+            "integrity": "sha1:afbff423561a4ea9237e5fbbd14a8273ba2b1564"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/paginate/medplaya-paginate-clients.query.ts",
+            "integrity": "sha1:5c6bcaf6a3f206309ca086b3248aab4d137507e6"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/paginate/medplaya-paginate-clients.service.spec.ts",
+            "integrity": "sha1:716a797f3abf0965cc7b6595032bc86074f8d5f8"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/paginate/medplaya-paginate-clients.service.ts",
+            "integrity": "sha1:305ccdf76b390d5f26be93c456e9b0c86e8a2be3"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/raw-sql/medplaya-raw-sql-clients.query-handler.spec.ts",
+            "integrity": "sha1:04a43bc6127b785319baf6c6404a2ca600fa2b3b"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/raw-sql/medplaya-raw-sql-clients.query-handler.ts",
+            "integrity": "sha1:10b7bdb29487b7962fb6490375e26b642b240061"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/raw-sql/medplaya-raw-sql-clients.query.ts",
+            "integrity": "sha1:d32321fdac7407ccf659e36eb5de63d8fa9974fc"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/raw-sql/medplaya-raw-sql-clients.service.spec.ts",
+            "integrity": "sha1:48c64e482b636bf901d27f4fc1345df6379cea8a"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/raw-sql/medplaya-raw-sql-clients.service.ts",
+            "integrity": "sha1:95b2cedb9148065c3ebb9c44ab9c45800fea9dfd"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/sagas/medplaya-client.sagas.ts",
+            "integrity": "sha1:346e75e5696048efc948f7a9282057c9cc7861aa"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-and-increment-clients.command-handler.spec.ts",
+            "integrity": "sha1:dc48389f5ccce916a5047cdc11391fb8bc60a801"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-and-increment-clients.command-handler.ts",
+            "integrity": "sha1:2dc484bbbac1642f9c6e4f63b1820fdd6d9983a0"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-and-increment-clients.command.ts",
+            "integrity": "sha1:87dab6b27ba7318978e231806bb78060cf2317a8"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-and-increment-clients.service.spec.ts",
+            "integrity": "sha1:d89d4058e235a3ce13d0de4df18a91564a66e5a1"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-and-increment-clients.service.ts",
+            "integrity": "sha1:3f0adfbd36fe8a1972b3702ba20176ec86c51525"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-clients.command-handler.spec.ts",
+            "integrity": "sha1:df5c6c4486b730d72d955be1cf6e065aa290bb5d"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-clients.command-handler.ts",
+            "integrity": "sha1:054dc2c555139e871fb223e601a43dbeda3f44db"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-clients.command.ts",
+            "integrity": "sha1:122b248631e05e02c734114a2e163d068d433e64"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-clients.service.spec.ts",
+            "integrity": "sha1:2ef3fd9434c5440222f67120ee4ebf897b50980a"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-clients.service.ts",
+            "integrity": "sha1:c826d838251353be821607a790fc48f5007a2bb9"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-client-by-id.command-handler.spec.ts",
+            "integrity": "sha1:06a03adda89134bbe58651422c3d2011123476cc"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-client-by-id.command-handler.ts",
+            "integrity": "sha1:eb7d9a07c52252080339507edc172bf0ebae30fe"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-client-by-id.command.ts",
+            "integrity": "sha1:0f8cf6aa08965af81bc9bb2c3d02e45e754989da"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-client-by-id.service.spec.ts",
+            "integrity": "sha1:e7268553aa0b9833c32183f0f8b07691e0d0334e"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/update/medplaya-update-client-by-id.service.ts",
+            "integrity": "sha1:11cb762d5114bab760dd2f4e1f5534fa3458b711"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/upsert/medplaya-upsert-client.command-handler.spec.ts",
+            "integrity": "sha1:40d72f72a9850c62c6007f3bcc9ec0d823706285"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/upsert/medplaya-upsert-client.command-handler.ts",
+            "integrity": "sha1:cab9a1d1b7623b8616e6c4ce4bda138095e2af86"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/upsert/medplaya-upsert-client.command.ts",
+            "integrity": "sha1:d039f2ecb6f6d80535da9f712cb68c484a780ddc"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/upsert/medplaya-upsert-client.service.spec.ts",
+            "integrity": "sha1:91157cbf8406e0dbba791585fa9dea0472adaf19"
+        },
+        {
+            "path": "src/@app/medplaya/client/application/upsert/medplaya-upsert-client.service.ts",
+            "integrity": "sha1:f6c7efd04ad0acbd3b0c050887006067a763d81f"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/index.ts",
+            "integrity": "sha1:f42ce5ec9a3b1de3bb4e134351fdd9161d2c6a49"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/medplaya-client.aggregate.ts",
+            "integrity": "sha1:61e30602937e36f08ac115d7ff6c218287eaa971"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/medplaya-client.mapper.ts",
+            "integrity": "sha1:af25f3f0d6dbcdf25279b2d83201069cf3c89380"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/medplaya-client.repository.ts",
+            "integrity": "sha1:44c5b567172d00a5d25dadd15e50006ee69b22cc"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/medplaya-client.response.ts",
+            "integrity": "sha1:7db906d20525422d90c55e59c205e177744f70f1"
+        },
+        {
+            "path": "src/@app/medplaya/client/index.ts",
+            "integrity": "sha1:7c50fd1c1da01e4f5cb6a5ac835c137aab221b6e"
+        },
+        {
+            "path": "src/@app/medplaya/client/infrastructure/mock/medplaya-mock-client.data.ts",
+            "integrity": "sha1:47db9b642df561cac48b70e8e91cac16fcd67896"
+        },
+        {
+            "path": "src/@app/medplaya/client/infrastructure/mock/medplaya-mock-client.repository.ts",
+            "integrity": "sha1:ec55770a980b18e2ed18d5c592430a56c79e1843"
+        },
+        {
+            "path": "src/@app/medplaya/client/infrastructure/mock/medplaya-mock-client.seeder.ts",
+            "integrity": "sha1:5d49aa997a9a58adfba39b1d82dd583fadf002e0"
+        },
+        {
+            "path": "src/@app/medplaya/client/infrastructure/sequelize/medplaya-sequelize-client.model.ts",
+            "integrity": "sha1:078077bd0d99e5d675b251dad65d855ba0e05b4b"
+        },
+        {
+            "path": "src/@app/medplaya/client/infrastructure/sequelize/medplaya-sequelize-client.repository.ts",
+            "integrity": "sha1:9c12e7e0b6df91a4fac8d2357037f5f9fada3b9f"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-id.ts",
+            "integrity": "sha1:71292274cf2e866f727db21b45add25e71a6946c"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-name.ts",
+            "integrity": "sha1:c8e6dee062e07cfd8275bacbdc01b8baff0d1074"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-lastname.ts",
+            "integrity": "sha1:c3926d740818d28efe774528c43b039a4c195ad8"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-username.ts",
+            "integrity": "sha1:cebf695c1ffa6213b730843526759e2ec778370b"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-checkin.ts",
+            "integrity": "sha1:360c1be1ee8919b18dbe6e5d8aa668f1d42abc31"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-checkout.ts",
+            "integrity": "sha1:3eab8f366ca60aefe734cff292608af437b15b4d"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-code.ts",
+            "integrity": "sha1:d0ac2fd517f0a313a76a87ea07093b8d71b937b5"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-room.ts",
+            "integrity": "sha1:9f2b386f9873e04e5b88d072b07a6e788a12e291"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-status.ts",
+            "integrity": "sha1:4d93264d57023f3e20f177a489e668b63f855d83"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-tags.ts",
+            "integrity": "sha1:f3774118f4aca4bd9546ca5c30af6d08f372975a"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-other-tags.ts",
+            "integrity": "sha1:b8a48f74b5657bc9b6cd2deda4e87e47bd299ed6"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-is-active.ts",
+            "integrity": "sha1:9c4a8bf0a615c37490af388364a8edbbcde1436d"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-amount.ts",
+            "integrity": "sha1:56c0bccc5ca5e8a59009b8e7b9f11078a81f1842"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-created-at.ts",
+            "integrity": "sha1:8c5051b2e3ba63fc83685eba1f05833bb85e9515"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-updated-at.ts",
+            "integrity": "sha1:fcb708648d8cafad85d88d36bceb571ffd046493"
+        },
+        {
+            "path": "src/@app/medplaya/client/domain/value-objects/medplaya-client-deleted-at.ts",
+            "integrity": "sha1:e9ddea46bd2b0a39534a3d85c3d92777a80474fd"
+        },
+        {
+            "path": "src/@api/medplaya/medplaya.module.ts",
+            "integrity": "sha1:64bf6b81e7a146f1c0745090156ec38cff442f34"
+        },
+        {
+            "path": "src/@api/medplaya/medplaya.seeder.ts",
+            "integrity": "sha1:9c7615e18c9f8e34e420a8fba4bb39ea4cecc119"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-create-clients.controller.spec.ts",
+            "integrity": "sha1:dc1ceb9374f08f2a41c52caf4c6de3fbb274bf18"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-create-clients.controller.ts",
+            "integrity": "sha1:8e80dce2524bf7a288f69e44d6b254b1dcd95826"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-create-client.controller.spec.ts",
+            "integrity": "sha1:f2f9cbb0a210bf2ba9319dbd84b7434b10f4f896"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-create-client.controller.ts",
+            "integrity": "sha1:635c30b47cd135f87eacca730501c2e22a25d13a"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-delete-clients.controller.spec.ts",
+            "integrity": "sha1:6abdd5e8fecd6ffbf7b813fc322af9c13989cdd9"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-delete-clients.controller.ts",
+            "integrity": "sha1:6f182ffcbc9dc3b80ae2b141ac627503a69e52d6"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-delete-client-by-id.controller.spec.ts",
+            "integrity": "sha1:79ccca0ed27f21504683a7448cfbcc4fbd60f458"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-delete-client-by-id.controller.ts",
+            "integrity": "sha1:1137dc8a961c07ae5181ca977ec0a3e7e7bc9db6"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-find-client-by-id.controller.spec.ts",
+            "integrity": "sha1:68448d3c4a220e4e41c4d20b61e29e426247fc8d"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-find-client-by-id.controller.ts",
+            "integrity": "sha1:0c44e4a7edd2a581612d9bb0adb789d86838cf23"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-find-client.controller.spec.ts",
+            "integrity": "sha1:db4b08eee05ceed1a0fa789acca12602217843d9"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-find-client.controller.ts",
+            "integrity": "sha1:d8bdabba1a053679bb051c906ae9113e4759b1f2"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-get-clients.controller.spec.ts",
+            "integrity": "sha1:1687ca4e7e77ed211901af25d5b2417a4d1ec694"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-get-clients.controller.ts",
+            "integrity": "sha1:b36405513d81902931b6d8e6631f6d360ce47249"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-paginate-clients.controller.spec.ts",
+            "integrity": "sha1:788ad3a1e32e4534bab5253a8760908b4803187d"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-paginate-clients.controller.ts",
+            "integrity": "sha1:1127ab4e0ccf93e47aec35cff3d2482243e93e26"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-update-clients.controller.spec.ts",
+            "integrity": "sha1:14138d2bbc436a1a3873ba02466acd3c2b5142ee"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-update-clients.controller.ts",
+            "integrity": "sha1:3ba55a0726b3664418fb8e7d8822ca81afef740c"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-update-client-by-id.controller.spec.ts",
+            "integrity": "sha1:6c4d435c72d537d457ce21a3dc8e476590c8c349"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-update-client-by-id.controller.ts",
+            "integrity": "sha1:ab2183a9975ded423be91fa372c059f60c1a0362"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-upsert-client.controller.spec.ts",
+            "integrity": "sha1:628984ad80a6da20f73100d4788692f609783546"
+        },
+        {
+            "path": "src/@api/medplaya/client/controllers/medplaya-upsert-client.controller.ts",
+            "integrity": "sha1:6505ac65d495c362467f5066702b766474db6ed1"
+        },
+        {
+            "path": "src/@api/medplaya/client/dto/index.ts",
+            "integrity": "sha1:0668bfe7d206f064143571f4c397ca726db8cdaf"
+        },
+        {
+            "path": "src/@api/medplaya/client/dto/public-api.ts",
+            "integrity": "sha1:15622c495e8e97dfc84507f18b89892634b43ffc"
+        },
+        {
+            "path": "src/@api/medplaya/client/dto/medplaya-create-client.dto.ts",
+            "integrity": "sha1:b375e0251a374543368691b3a0a082a8ebe47ee2"
+        },
+        {
+            "path": "src/@api/medplaya/client/dto/medplaya-update-clients.dto.ts",
+            "integrity": "sha1:745f8223e5654266df0f1e1f96151e8c8da32bd8"
+        },
+        {
+            "path": "src/@api/medplaya/client/dto/medplaya-update-client-by-id.dto.ts",
+            "integrity": "sha1:76fc34d5c0ef8910ab1668ae155ff44f31216b4e"
+        },
+        {
+            "path": "src/@api/medplaya/client/dto/medplaya-client.dto.ts",
+            "integrity": "sha1:126ab9074617e0c791d099222baece4cb67ba2e3"
+        },
+        {
+            "path": "src/@api/medplaya/client/graphql/medplaya-client.graphql",
+            "integrity": "sha1:134ee4b8f373f4323497c7f35b6493cff7a940c6"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-create-clients.handler.spec.ts",
+            "integrity": "sha1:d1e4ff00304c6100d4d6ee556f487bd66c2ed587"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-create-clients.handler.ts",
+            "integrity": "sha1:7cbcaf6db00b2823d17e3d0b3efd4e67c9536307"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-create-client.handler.spec.ts",
+            "integrity": "sha1:d1d7142ac823049b00b0588a90cd4daafb0df664"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-create-client.handler.ts",
+            "integrity": "sha1:6c9733a8a9c1477fb8aa7d1584b268b7b74858d5"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-delete-clients.handler.spec.ts",
+            "integrity": "sha1:3c7a6b93e9a0eae397aeb0707111580268a1fb54"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-delete-clients.handler.ts",
+            "integrity": "sha1:a24a39f476485bb9bf8b28bbb81c13ac48a6ac1c"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-delete-client-by-id.handler.spec.ts",
+            "integrity": "sha1:6772e448b6316da367b4574f7039add52880feb6"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-delete-client-by-id.handler.ts",
+            "integrity": "sha1:64def7ef42d0f7072f2415f91e1821ae81ba7f4d"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-find-client-by-id.handler.spec.ts",
+            "integrity": "sha1:75eb9a610c6504d89a66f231e4bd7146ac776a4c"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-find-client-by-id.handler.ts",
+            "integrity": "sha1:ad92596728bc24a1f4ac3d8c63390c92a09c09fd"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-find-client.handler.spec.ts",
+            "integrity": "sha1:177de7802c54c50ba6f51cebd4cf38125bf0ef18"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-find-client.handler.ts",
+            "integrity": "sha1:19c587a4c5f376331eb9418afb977b764d89e0c9"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-get-clients.handler.spec.ts",
+            "integrity": "sha1:f05505de0d39a1ad8700af55a65845a19661db8f"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-get-clients.handler.ts",
+            "integrity": "sha1:487c435a1407402507798813010688b73c82368d"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-paginate-clients.handler.spec.ts",
+            "integrity": "sha1:7e2aeca6143a44d84c0b0229d86297e58ab0d19c"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-paginate-clients.handler.ts",
+            "integrity": "sha1:fa5ed4aeede471bc20cae17e6d5e80b639cad777"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-update-clients.handler.spec.ts",
+            "integrity": "sha1:cfc8a0d2bac500206d4af595740977b7180ad31e"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-update-clients.handler.ts",
+            "integrity": "sha1:cd3677b758a46eb3b79c64a064c1847e849358f0"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-update-client-by-id.handler.spec.ts",
+            "integrity": "sha1:524366d7ec6f0389484bc22e0260892e40a7b314"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-update-client-by-id.handler.ts",
+            "integrity": "sha1:3cb49714827b5a9c9ac11120bad179874e10ed97"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-upsert-client.handler.spec.ts",
+            "integrity": "sha1:49fa3deafcf0f3c3dc445e286323deedbff5beaa"
+        },
+        {
+            "path": "src/@api/medplaya/client/handlers/medplaya-upsert-client.handler.ts",
+            "integrity": "sha1:670ef9a30bd517fbc04ab335ff593a4e70b3a099"
+        },
+        {
+            "path": "src/@api/medplaya/client/index.ts",
+            "integrity": "sha1:4c64e251006aaa2cd4a871b632da1d003977773e"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-create-clients.resolver.spec.ts",
+            "integrity": "sha1:7f24c42a100c75cd85739392093b3b662b0b7c53"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-create-clients.resolver.ts",
+            "integrity": "sha1:779b007325df0aac2e65455456609453ff20f950"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-create-client.resolver.spec.ts",
+            "integrity": "sha1:313c36af4217f6f379c28e5a346682c60a3fb21e"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-create-client.resolver.ts",
+            "integrity": "sha1:b7c89de3d2f10d2133f8917db5a50418d68d4e22"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-delete-clients.resolver.spec.ts",
+            "integrity": "sha1:3b8ed951589f6ae85209cc4c0c3c8dc019299648"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-delete-clients.resolver.ts",
+            "integrity": "sha1:cd5a3831b27c619454ad8984bdb7332a60dcc116"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-delete-client-by-id.resolver.spec.ts",
+            "integrity": "sha1:fd89fc94788a9fc580b95b6e5b91ce86bf7df65a"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-delete-client-by-id.resolver.ts",
+            "integrity": "sha1:74099dfe94010605d327ac1a55ea3313782f6c4e"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-find-client-by-id.resolver.spec.ts",
+            "integrity": "sha1:5eeea16f88731193937f73be75420ce71f7b661c"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-find-client-by-id.resolver.ts",
+            "integrity": "sha1:9adc1be7785f6047461fc5a6bfaf0ba404eb82a7"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-find-client.resolver.spec.ts",
+            "integrity": "sha1:a3ad7e4c9a1e1970f0266a57810da0cb59f2f16f"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-find-client.resolver.ts",
+            "integrity": "sha1:9eec116556a9d3763a5cfc919cb5294c5604be77"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-get-clients.resolver.spec.ts",
+            "integrity": "sha1:d4be33afe813955e8dbec52b5908bdd6e953839f"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-get-clients.resolver.ts",
+            "integrity": "sha1:fcc53735d2bbf040f33843d704af8713ea8a3f82"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-paginate-clients.resolver.spec.ts",
+            "integrity": "sha1:3e41eb5fb3dd1a4df13b6c7d4c1605001b39b9f4"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-paginate-clients.resolver.ts",
+            "integrity": "sha1:109f575d64e7f6be535cb5399fc05949368d798b"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-update-clients.resolver.spec.ts",
+            "integrity": "sha1:ee1a7b0b07741571934e76f33c14844f99cbbade"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-update-clients.resolver.ts",
+            "integrity": "sha1:3ffeee975a792a158ab06bce5d200fe7f2dfbe06"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-update-client-by-id.resolver.spec.ts",
+            "integrity": "sha1:630444ceae5e346a277d2a763247fdf17ecee2ec"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-update-client-by-id.resolver.ts",
+            "integrity": "sha1:48b090f248706e744d09018bc08261ddd3ef194b"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-upsert-client.resolver.spec.ts",
+            "integrity": "sha1:720438cf8781b999f7be8042928bb356f88d83ab"
+        },
+        {
+            "path": "src/@api/medplaya/client/resolvers/medplaya-upsert-client.resolver.ts",
+            "integrity": "sha1:89cf105801519a7fe52a92ea5e9ae8e941a084a7"
+        },
+        {
+            "path": "src/@api/medplaya/client/seeder/medplaya-client.seeder.ts",
+            "integrity": "sha1:b37520b24703d28831faa5593b6202e1e6276e37"
+        },
+        {
+            "path": "test/acceptance/medplaya/client.e2e-spec.ts",
+            "integrity": "sha1:03444ec2d04fb2995de9fe46e6d4d346890fa41c"
+        },
+        {
+            "path": "postman/medplaya/medplaya.client.postman.json",
+            "integrity": "sha1:59d73b15f26c1b997578b3016a5115cb96a8ca40"
+        }
+    ]
+}

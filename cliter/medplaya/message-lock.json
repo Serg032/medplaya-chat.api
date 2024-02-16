@@ -1,0 +1,721 @@
+{
+    "version": "0.0.1",
+    "files": [
+        {
+            "path": "src/@app/medplaya/medplaya.seed.ts",
+            "integrity": "sha1:61b0aa1ba1002473c70936f5984d0a993f63eb19"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/create/medplaya-create-messages.command-handler.spec.ts",
+            "integrity": "sha1:29f8dfad96a22647a7ed019fe1ce2172f58184df"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/create/medplaya-create-messages.command-handler.ts",
+            "integrity": "sha1:f2b7e92fc73ba95093c8bcf216cce2a05d1785ba"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/create/medplaya-create-messages.command.ts",
+            "integrity": "sha1:a664280a7940a963913993efac10d3d2797b527e"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/create/medplaya-create-messages.service.spec.ts",
+            "integrity": "sha1:bfafbbcccfe94174357010d9ae5f3503297f9303"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/create/medplaya-create-messages.service.ts",
+            "integrity": "sha1:16c46ca2f657661ba7e88166621b9c767fa1c446"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/create/medplaya-create-message.command-handler.spec.ts",
+            "integrity": "sha1:172df83e6e9390830ce356a0d4b3d51f8f06355a"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/create/medplaya-create-message.command-handler.ts",
+            "integrity": "sha1:0cdfaea6c187e562503aa553e6ee63bfe6843804"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/create/medplaya-create-message.command.ts",
+            "integrity": "sha1:f81979222b032c5af9bbf21da9461944fc67486e"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/create/medplaya-create-message.service.spec.ts",
+            "integrity": "sha1:474c57ededb8bd7b4cf2a94648d777176aa96528"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/create/medplaya-create-message.service.ts",
+            "integrity": "sha1:9f9c0692e97828274465bc8c0e3e3e4c5e7c7c18"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/delete/medplaya-delete-messages.command-handler.spec.ts",
+            "integrity": "sha1:43d4acd7840e55f4202efb88350d3ea05261c838"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/delete/medplaya-delete-messages.command-handler.ts",
+            "integrity": "sha1:6dee95892acdfea5d9c652192b480df2a01ecf85"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/delete/medplaya-delete-messages.command.ts",
+            "integrity": "sha1:d2392f905ea1c71b2594ae7c702bcdd28fa6cf42"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/delete/medplaya-delete-messages.service.spec.ts",
+            "integrity": "sha1:da8fd2121ccb7030d4a526ad580ddd77e6a8e5bc"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/delete/medplaya-delete-messages.service.ts",
+            "integrity": "sha1:76e1574a767821ca2aad2b2954b16daf3b0bf96d"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/delete/medplaya-delete-message-by-id.command-handler.spec.ts",
+            "integrity": "sha1:d9d863cccde476d254022d49b37bbefc4b03c29d"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/delete/medplaya-delete-message-by-id.command-handler.ts",
+            "integrity": "sha1:3961b7725918931c41b062f7b73c845dd9c4cd3f"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/delete/medplaya-delete-message-by-id.command.ts",
+            "integrity": "sha1:a0c5f94a31dee72089e5548ca9f07d6b7e95a83d"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/delete/medplaya-delete-message-by-id.service.spec.ts",
+            "integrity": "sha1:0df507d2b10d1ff23e2fde0ee7f6a875c5fdb66e"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/delete/medplaya-delete-message-by-id.service.ts",
+            "integrity": "sha1:6dd7e5d426b0abb01fc6328c69b5604f27666a7b"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-add-messages-context.event.ts",
+            "integrity": "sha1:4cce8f2fea586611a84f2b985f5d18b00fa5ba71"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-created-messages.event-handler.ts",
+            "integrity": "sha1:7848777902a79a3079a03650be195f99133280fc"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-created-messages.event.ts",
+            "integrity": "sha1:e67ff9e74543304317bb8f1422a0afd6736ecdd2"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-created-message.event-handler.ts",
+            "integrity": "sha1:13bf90b67e105860e50e4c5b4657079589d01685"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-created-message.event.ts",
+            "integrity": "sha1:e8e5d8b452d6b01b51d8fd93c67b882d375fea0a"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-deleted-messages.event-handler.ts",
+            "integrity": "sha1:0e7d996dbf6a76edc56e82adc2bf8bce72f6e082"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-deleted-messages.event.ts",
+            "integrity": "sha1:c9385377633dea92c0f3cfbf2ae074e96a10db7c"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-deleted-message.event-handler.ts",
+            "integrity": "sha1:b38e21cbc4a418bcd503b22b00b0bd526c39f4d5"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-deleted-message.event.ts",
+            "integrity": "sha1:3522d08503cdd28f7cba8061e2f6a9729d352e08"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-updated-and-incremented-messages.event-handler.ts",
+            "integrity": "sha1:9ffebb795820686dbdc594a7e429c56dd7c54bc7"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-updated-and-incremented-messages.event.ts",
+            "integrity": "sha1:746e53935aaa33428297ee6990137dc7b7c07a92"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-updated-and-incremented-message.event.ts",
+            "integrity": "sha1:8c126ce587755dfb2029f6e3b55e2e0b773fef1e"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-updated-messages.event-handler.ts",
+            "integrity": "sha1:4b31678d7ff0f3a008a1f97f7d8fdccdd9f79b25"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-updated-messages.event.ts",
+            "integrity": "sha1:a93aefd2965511c4f8746190e8262879d3f03d1d"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-updated-message.event-handler.ts",
+            "integrity": "sha1:e06e3387899a9de48ecab7c3e83b9c65e7189323"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/events/medplaya-updated-message.event.ts",
+            "integrity": "sha1:4024eeeae0a19f9b4ec50bf7a38710b6e4c0a405"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/find/medplaya-find-message-by-id.query-handler.spec.ts",
+            "integrity": "sha1:cc16faf6aea80260866ec0029cfdd6a60a495c11"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/find/medplaya-find-message-by-id.query-handler.ts",
+            "integrity": "sha1:6889b4abf0654ecbac244a5cd83d2fa011538723"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/find/medplaya-find-message-by-id.query.ts",
+            "integrity": "sha1:3fa31c897109bc4ede90a72b2171340e1ba14046"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/find/medplaya-find-message-by-id.service.spec.ts",
+            "integrity": "sha1:afc044f174b455783a44b8e73c24e6f2b5bda772"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/find/medplaya-find-message-by-id.service.ts",
+            "integrity": "sha1:23ade9fc54f80fdcf6b760cfcf5c3f843f799417"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/find/medplaya-find-message.query-handler.spec.ts",
+            "integrity": "sha1:4d3bfce74a9263908fb0010c0c81cf3289b73f5a"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/find/medplaya-find-message.query-handler.ts",
+            "integrity": "sha1:b82d6bb890491f6219693a492815affa5a17914d"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/find/medplaya-find-message.query.ts",
+            "integrity": "sha1:f094ede1952db29e9b91a32f86652cf7c1117e0e"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/find/medplaya-find-message.service.spec.ts",
+            "integrity": "sha1:3c507a6f56a174f5bed4dc52325e4698edff0059"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/find/medplaya-find-message.service.ts",
+            "integrity": "sha1:f29a83240d7192d4ded6e46f91b741a3b74a78aa"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/get/medplaya-get-messages.query-handler.spec.ts",
+            "integrity": "sha1:abdf86ecf12eff7eb66ea6bdbab24c6b4dc5dfac"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/get/medplaya-get-messages.query-handler.ts",
+            "integrity": "sha1:778f7f15824822a1b766ae02487ac3e42172e768"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/get/medplaya-get-messages.query.ts",
+            "integrity": "sha1:33012afe4f721cbbba21ba597b4b0ddc0fae081d"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/get/medplaya-get-messages.service.spec.ts",
+            "integrity": "sha1:1e4f8f968f1592dcdc62cbf4bc4f0287132c4fbe"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/get/medplaya-get-messages.service.ts",
+            "integrity": "sha1:b31e9d74d1fb218e781644fbcc148310f8ca8810"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/paginate/medplaya-paginate-messages.query-handler.spec.ts",
+            "integrity": "sha1:e97437450b694df52c64d1ed5c7ac94c19748727"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/paginate/medplaya-paginate-messages.query-handler.ts",
+            "integrity": "sha1:38a2c486772cddfe6473f67593bb3ec7ecba963c"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/paginate/medplaya-paginate-messages.query.ts",
+            "integrity": "sha1:93b12e2548a86591d6100da8e0de473b1dce45b7"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/paginate/medplaya-paginate-messages.service.spec.ts",
+            "integrity": "sha1:e6223f8caed64c09978a00273ccf85221c9f0821"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/paginate/medplaya-paginate-messages.service.ts",
+            "integrity": "sha1:eb51403e86b8b61f7ffe0b43fc98a6929c855bc0"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/raw-sql/medplaya-raw-sql-messages.query-handler.spec.ts",
+            "integrity": "sha1:055503b39a89604b26aafd3c701e36ecb94e25d1"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/raw-sql/medplaya-raw-sql-messages.query-handler.ts",
+            "integrity": "sha1:04e1839822598c442335f003657fdfe347cb05bc"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/raw-sql/medplaya-raw-sql-messages.query.ts",
+            "integrity": "sha1:aaeaa862e70837eeaa7d7aa5e8d96cd9e1fbd8f4"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/raw-sql/medplaya-raw-sql-messages.service.spec.ts",
+            "integrity": "sha1:52ec9c95eaf1139ca7700aad9e96ca7f3b0a831d"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/raw-sql/medplaya-raw-sql-messages.service.ts",
+            "integrity": "sha1:6b89e97e15d48382d64059d4fafd99f756724f1a"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/sagas/medplaya-message.sagas.ts",
+            "integrity": "sha1:f9f096360d064d2c4381b83a40be194f6291cc5e"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-and-increment-messages.command-handler.spec.ts",
+            "integrity": "sha1:02aed8c0666d87881c4ded79750afeb4629cb6b1"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-and-increment-messages.command-handler.ts",
+            "integrity": "sha1:95a7e249fe36ee0a250f99fcdaf1646ace080199"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-and-increment-messages.command.ts",
+            "integrity": "sha1:45a8390b39f419bdaf8c8b00f7d4f74f42f0837f"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-and-increment-messages.service.spec.ts",
+            "integrity": "sha1:c7b012d8f6bea1669a42bd59c44a3b2af80c5649"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-and-increment-messages.service.ts",
+            "integrity": "sha1:2ccad9a8da0757b10da55c8a994865fc0be569d9"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-messages.command-handler.spec.ts",
+            "integrity": "sha1:df5b23f78b6a09530d246ff0f3b176da8ea01058"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-messages.command-handler.ts",
+            "integrity": "sha1:4eac843281959a8f406bf0031982ec9275d1618d"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-messages.command.ts",
+            "integrity": "sha1:7af7655b91d9ac11f6e75d2f2f43e671fa3b722a"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-messages.service.spec.ts",
+            "integrity": "sha1:7854837f031835c0cb85adfaff5efb686c9669d1"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-messages.service.ts",
+            "integrity": "sha1:76ce0cc450fdc1d4352c992453f72631d33e65d7"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-message-by-id.command-handler.spec.ts",
+            "integrity": "sha1:3e71518496304d9a8e64d53b2fe857a182ef8109"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-message-by-id.command-handler.ts",
+            "integrity": "sha1:94fa483b3abe8f649f03ecd48ffa69771e680087"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-message-by-id.command.ts",
+            "integrity": "sha1:0edc02d48758944f51c49f01b6a31dad0de254a5"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-message-by-id.service.spec.ts",
+            "integrity": "sha1:1bede8d9661f0042ccd471a91c6f271f6b020cdc"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/update/medplaya-update-message-by-id.service.ts",
+            "integrity": "sha1:225bca14eda35e1adaa804d6c82bbb551b93dfbc"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/upsert/medplaya-upsert-message.command-handler.spec.ts",
+            "integrity": "sha1:8948390dc24e370b585bbd2760614dee0b0452db"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/upsert/medplaya-upsert-message.command-handler.ts",
+            "integrity": "sha1:cce2fd05d1d3e6d39504fed44ea1535abba3ccc6"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/upsert/medplaya-upsert-message.command.ts",
+            "integrity": "sha1:8bc211d5dc9e59dac7e3d79187d2348d6597367c"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/upsert/medplaya-upsert-message.service.spec.ts",
+            "integrity": "sha1:77161e741ab19d3a7f5152391f1aecb5e5eb8f02"
+        },
+        {
+            "path": "src/@app/medplaya/message/application/upsert/medplaya-upsert-message.service.ts",
+            "integrity": "sha1:dcceb25d0056aa5df0f4a081e6e118a3c0e715c4"
+        },
+        {
+            "path": "src/@app/medplaya/message/domain/value-objects/index.ts",
+            "integrity": "sha1:00ae2a95133debf34033b00701b9ac88b09f5f14"
+        },
+        {
+            "path": "src/@app/medplaya/message/domain/medplaya-message.aggregate.ts",
+            "integrity": "sha1:f8f792e1d51bee62bcab7aad3463d16a1c22d04c"
+        },
+        {
+            "path": "src/@app/medplaya/message/domain/medplaya-message.mapper.ts",
+            "integrity": "sha1:08927e448bc093937ad9f02e1f2b97c8b12fd745"
+        },
+        {
+            "path": "src/@app/medplaya/message/domain/medplaya-message.repository.ts",
+            "integrity": "sha1:35234b94cbb4cf02527ea0ff10d2371987e331af"
+        },
+        {
+            "path": "src/@app/medplaya/message/domain/medplaya-message.response.ts",
+            "integrity": "sha1:28e866bbab64df3924d4fd33f4a3508517cc9129"
+        },
+        {
+            "path": "src/@app/medplaya/message/index.ts",
+            "integrity": "sha1:97672284e6ed4851db05cd59d9b8c86bf3172996"
+        },
+        {
+            "path": "src/@app/medplaya/message/infrastructure/mock/medplaya-mock-message.data.ts",
+            "integrity": "sha1:4acb9acd91d2b2b6cf87388c72069d77e18a3424"
+        },
+        {
+            "path": "src/@app/medplaya/message/infrastructure/mock/medplaya-mock-message.repository.ts",
+            "integrity": "sha1:013ba566c1e8422627662dd7fcb65a1fca173fcd"
+        },
+        {
+            "path": "src/@app/medplaya/message/infrastructure/mock/medplaya-mock-message.seeder.ts",
+            "integrity": "sha1:dbe267e081f0c7c7f3053a313635bddb39c980f8"
+        },
+        {
+            "path": "src/@app/medplaya/message/infrastructure/sequelize/medplaya-sequelize-message.model.ts",
+            "integrity": "sha1:c8ac7d5450c2d1ce2329b42b5db94f5c3c2900bf"
+        },
+        {
+            "path": "src/@app/medplaya/message/infrastructure/sequelize/medplaya-sequelize-message.repository.ts",
+            "integrity": "sha1:3706c9c7ae812d342a11442f2cf248d23900149b"
+        },
+        {
+            "path": "src/@app/medplaya/message/domain/value-objects/medplaya-message-id.ts",
+            "integrity": "sha1:e84df3e5528011c197ed0878444d81b100e33356"
+        },
+        {
+            "path": "src/@app/medplaya/message/domain/value-objects/medplaya-message-question.ts",
+            "integrity": "sha1:dbda1088fa1030a3ed82b3ce18d7f385d49701e7"
+        },
+        {
+            "path": "src/@app/medplaya/message/domain/value-objects/medplaya-message-chat-response.ts",
+            "integrity": "sha1:7ab4c3841729930ea2b6641906a22248737c1fe1"
+        },
+        {
+            "path": "src/@app/medplaya/message/domain/value-objects/medplaya-message-client-id.ts",
+            "integrity": "sha1:247160c77b169ee67e3fa30b435057d3d2d9fdfc"
+        },
+        {
+            "path": "src/@app/medplaya/message/domain/value-objects/medplaya-message-created-at.ts",
+            "integrity": "sha1:8519cf68a6b92754b8f4b0dbdd55fb24ae61efff"
+        },
+        {
+            "path": "src/@app/medplaya/message/domain/value-objects/medplaya-message-updated-at.ts",
+            "integrity": "sha1:92bacc91d5102d620901ee656b6363dca36a412a"
+        },
+        {
+            "path": "src/@app/medplaya/message/domain/value-objects/medplaya-message-deleted-at.ts",
+            "integrity": "sha1:6cf26edf7b4090681a0027710e1840e078d597e5"
+        },
+        {
+            "path": "src/@api/medplaya/medplaya.seeder.ts",
+            "integrity": "sha1:9c7615e18c9f8e34e420a8fba4bb39ea4cecc119"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-create-messages.controller.spec.ts",
+            "integrity": "sha1:1dc22750534a503e2bee460ddc84e34bdc9e6fba"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-create-messages.controller.ts",
+            "integrity": "sha1:8fd692bd455474943a2463d69e730a9b69a892be"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-create-message.controller.spec.ts",
+            "integrity": "sha1:6672fb725bf202624b63c7a3d244e06f5379100e"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-create-message.controller.ts",
+            "integrity": "sha1:a4ce1b8bade0bc2097bcd3e62c7379048fc9cf79"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-delete-messages.controller.spec.ts",
+            "integrity": "sha1:73f595ca5ad8610c1b2f61a808384154b155ddc7"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-delete-messages.controller.ts",
+            "integrity": "sha1:5eae40463fc26a259f5b1ebd2303aaca79de5533"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-delete-message-by-id.controller.spec.ts",
+            "integrity": "sha1:71ab200ce3c65a223211a3a9497229a56963993c"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-delete-message-by-id.controller.ts",
+            "integrity": "sha1:9b65aeceff7462e19f19c6185ba9e1969e5a6b8f"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-find-message-by-id.controller.spec.ts",
+            "integrity": "sha1:e00122eca3a17299863c89afc2eecf1639fed58e"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-find-message-by-id.controller.ts",
+            "integrity": "sha1:cdd8fbc11502349ee1785bebfbdbc1a27140b6e3"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-find-message.controller.spec.ts",
+            "integrity": "sha1:405e02a6d78b057e96da118e396a19365bbfe78a"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-find-message.controller.ts",
+            "integrity": "sha1:c850ec3b0e4a49cba84ce42caf4fbda4a1924db9"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-get-messages.controller.spec.ts",
+            "integrity": "sha1:6e506fcd266790640645ac8e3af28d227bb20257"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-get-messages.controller.ts",
+            "integrity": "sha1:b47897bb7924a3c955f6c4e7060b0a8e7e75f30a"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-paginate-messages.controller.spec.ts",
+            "integrity": "sha1:62fc6cd39b96ad826a83c9b25f302bae4c1a74f7"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-paginate-messages.controller.ts",
+            "integrity": "sha1:4c2b07ef25e6d5f05e81730202bd963d4715199f"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-update-messages.controller.spec.ts",
+            "integrity": "sha1:9114f23b81bb337d8bf6463dfa5ce9e1e69f3531"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-update-messages.controller.ts",
+            "integrity": "sha1:2f0ac658e380560f2eb0d877f2a582ae8ede0c09"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-update-message-by-id.controller.spec.ts",
+            "integrity": "sha1:a54f8a5e7aee0c89b7ff14b8874f9b7ed88ef405"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-update-message-by-id.controller.ts",
+            "integrity": "sha1:6c06a529936a1ed5d964a8d6846340e1c254169a"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-upsert-message.controller.spec.ts",
+            "integrity": "sha1:836769cabcb3c0be60eebd8bd72088d64bb985c6"
+        },
+        {
+            "path": "src/@api/medplaya/message/controllers/medplaya-upsert-message.controller.ts",
+            "integrity": "sha1:ac191e0ec56c9097d9345335e05d28fe7b044fbe"
+        },
+        {
+            "path": "src/@api/medplaya/message/dto/index.ts",
+            "integrity": "sha1:0668bfe7d206f064143571f4c397ca726db8cdaf"
+        },
+        {
+            "path": "src/@api/medplaya/message/dto/public-api.ts",
+            "integrity": "sha1:ef36842b4612bea2c3679d6498d1f2537512dac5"
+        },
+        {
+            "path": "src/@api/medplaya/message/dto/medplaya-create-message.dto.ts",
+            "integrity": "sha1:f62b311c2eeaeac7d5a54bccc8a8997d22da6fb0"
+        },
+        {
+            "path": "src/@api/medplaya/message/dto/medplaya-update-messages.dto.ts",
+            "integrity": "sha1:1c5682ae829e314325a0b5d72025a4c85553e38c"
+        },
+        {
+            "path": "src/@api/medplaya/message/dto/medplaya-update-message-by-id.dto.ts",
+            "integrity": "sha1:ee3dc0231c542e0313af42b822dc1c62b12c9034"
+        },
+        {
+            "path": "src/@api/medplaya/message/dto/medplaya-message.dto.ts",
+            "integrity": "sha1:cc46804a3397a8eb49142203a256be6b60a75cd3"
+        },
+        {
+            "path": "src/@api/medplaya/message/graphql/medplaya-message.graphql",
+            "integrity": "sha1:1b8ce3dd3172be80421ef38417b73bda382b4648"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-create-messages.handler.spec.ts",
+            "integrity": "sha1:80d1f89be72c4a541e5974abca29303546efa83e"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-create-messages.handler.ts",
+            "integrity": "sha1:4373478cf511e6df78950fa9a982472a373d0d24"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-create-message.handler.spec.ts",
+            "integrity": "sha1:0b75ad891094984554309cd3c69cd364f2b45e25"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-create-message.handler.ts",
+            "integrity": "sha1:46587bcd21284b3f1387ce4e6e0cff9035912f56"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-delete-messages.handler.spec.ts",
+            "integrity": "sha1:7199ced6e26c20c1c651f6a06fa1c9e9b6a332bd"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-delete-messages.handler.ts",
+            "integrity": "sha1:211fac0fa41059ffdd1e656c7b2a21646a3896f2"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-delete-message-by-id.handler.spec.ts",
+            "integrity": "sha1:f0d2403dd1dfe553d96cef2d8139907ae47fef89"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-delete-message-by-id.handler.ts",
+            "integrity": "sha1:75a1d903b4a675e1e2eaf7d7d02f2bc0b6d38185"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-find-message-by-id.handler.spec.ts",
+            "integrity": "sha1:883442dc86db275a7bc1b0dc566afcce3c1e0e43"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-find-message-by-id.handler.ts",
+            "integrity": "sha1:191cffd310efa9d12a4f3af02867a12ed6141074"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-find-message.handler.spec.ts",
+            "integrity": "sha1:eba36a4a0cf5cb6954279e1eb8f62ba749c76b96"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-find-message.handler.ts",
+            "integrity": "sha1:b66a80a649c64636249fcb83a2961a0c53fba828"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-get-messages.handler.spec.ts",
+            "integrity": "sha1:5684263cac683a158b4642e3d92d811aab781618"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-get-messages.handler.ts",
+            "integrity": "sha1:8c3bd17806ed155e7299dfa3c7f3a6e2abb22097"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-paginate-messages.handler.spec.ts",
+            "integrity": "sha1:087b6c1084407a025eb5f719e72f3b20a435e333"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-paginate-messages.handler.ts",
+            "integrity": "sha1:70bb0f5b8625bccda3235343f67ef381546e48f7"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-update-messages.handler.spec.ts",
+            "integrity": "sha1:07c4cac3a655f8efab56cc55f1e569132feedc4d"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-update-messages.handler.ts",
+            "integrity": "sha1:c9b8f5517de76f01cbf9965dd2c0a5c1d93a3e94"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-update-message-by-id.handler.spec.ts",
+            "integrity": "sha1:c8e265009d39e80d3f613c6b9a80ed14f310ff82"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-update-message-by-id.handler.ts",
+            "integrity": "sha1:76617d36b7c9fb8be88388c0441606c3a302abd1"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-upsert-message.handler.spec.ts",
+            "integrity": "sha1:4e7775e7fdcdb30d908a902d0b05c630030aad5a"
+        },
+        {
+            "path": "src/@api/medplaya/message/handlers/medplaya-upsert-message.handler.ts",
+            "integrity": "sha1:b3d59360a85490578fae83b1227ef4ef0e93fb13"
+        },
+        {
+            "path": "src/@api/medplaya/message/index.ts",
+            "integrity": "sha1:c07ffeab5c29c829fcce4bf3a1dafe6f807e847f"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-create-messages.resolver.spec.ts",
+            "integrity": "sha1:f50a5b765ee80d2c0348f7648f7318dbeb53ccc3"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-create-messages.resolver.ts",
+            "integrity": "sha1:b293c1993935ce48e52b133e6aebe6c017421f8d"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-create-message.resolver.spec.ts",
+            "integrity": "sha1:12ab3e8d686cc91b65b394790ebc6a82ad3fdee8"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-create-message.resolver.ts",
+            "integrity": "sha1:25c3a9f3659e9250e1dc48ab232c8af2a8d00d2c"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-delete-messages.resolver.spec.ts",
+            "integrity": "sha1:080063c070db921ed3a7de9941e54fa7dd1834fd"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-delete-messages.resolver.ts",
+            "integrity": "sha1:12bc2cfe52f2329823011f4b53a67d845e473dd8"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-delete-message-by-id.resolver.spec.ts",
+            "integrity": "sha1:00dbf31f7308eee1742e5c970f5e68642b5face6"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-delete-message-by-id.resolver.ts",
+            "integrity": "sha1:57a8620264a9aa21b12fc00ae3b94c55ea60af6f"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-find-message-by-id.resolver.spec.ts",
+            "integrity": "sha1:43ac7c147626ea74105538047825f3c16bc9d3e2"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-find-message-by-id.resolver.ts",
+            "integrity": "sha1:cfd3a44beacefbe1a9a49a2e25aee6925bb2508e"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-find-message.resolver.spec.ts",
+            "integrity": "sha1:37918166f36b44dcfdebd017a1ca8f20b766f814"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-find-message.resolver.ts",
+            "integrity": "sha1:683029ab85888b73f6447dc1ebae9d24aafde90d"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-get-messages.resolver.spec.ts",
+            "integrity": "sha1:313814b07f0795ece2a96592a0d3f8ac3cc30f91"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-get-messages.resolver.ts",
+            "integrity": "sha1:2fd5b207d7c3d4adb342dc56679bbc1b0d16a5a8"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-paginate-messages.resolver.spec.ts",
+            "integrity": "sha1:6f2884cb6a05c0fcba7c6de4cf1f0884b29c1a4b"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-paginate-messages.resolver.ts",
+            "integrity": "sha1:b19bfc6d145211eded8076387026c6369e528f72"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-update-messages.resolver.spec.ts",
+            "integrity": "sha1:19d67770f1317feb1525d4242da71d8f5bc76b40"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-update-messages.resolver.ts",
+            "integrity": "sha1:978d1264257d68e23cd4e3fabf0f516922ed5071"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-update-message-by-id.resolver.spec.ts",
+            "integrity": "sha1:b7956ae5f202ec3324c9dcb9b961799a7730f5c5"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-update-message-by-id.resolver.ts",
+            "integrity": "sha1:1b248420eb6cf4699253147897185e3645037c09"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-upsert-message.resolver.spec.ts",
+            "integrity": "sha1:ee919387f0fc6ae18ac4b7766b4e0d0b480b4f85"
+        },
+        {
+            "path": "src/@api/medplaya/message/resolvers/medplaya-upsert-message.resolver.ts",
+            "integrity": "sha1:d6d3a05941ad6e403779f707a5369a4cb91c37ce"
+        },
+        {
+            "path": "src/@api/medplaya/message/seeder/medplaya-message.seeder.ts",
+            "integrity": "sha1:17f778a10588887035e5b5e473e0d6cb708feffb"
+        },
+        {
+            "path": "test/acceptance/medplaya/message.e2e-spec.ts",
+            "integrity": "sha1:588b450fea264ed4fa5a7873582db0ae7428b288"
+        },
+        {
+            "path": "postman/medplaya/medplaya.message.postman.json",
+            "integrity": "sha1:62f86b843e0f063684b9e8a42405eec25214eef4"
+        }
+    ]
+}

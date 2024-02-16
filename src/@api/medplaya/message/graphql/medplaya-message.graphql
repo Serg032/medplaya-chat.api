@@ -1,0 +1,97 @@
+
+type MedplayaMessage
+{
+    id: ID!
+    question: GraphQLString!
+    chatResponse: GraphQLString!
+    clientId: ID!
+    client: MedplayaClient
+    createdAt: GraphQLTimestamp
+    updatedAt: GraphQLTimestamp
+    deletedAt: GraphQLTimestamp
+}
+
+input MedplayaCreateMessageInput
+{
+    id: ID!
+    question: GraphQLString!
+    chatResponse: GraphQLString!
+    clientId: ID!
+}
+
+input MedplayaUpdateMessageByIdInput
+{
+    id: ID!
+    question: GraphQLString
+    chatResponse: GraphQLString
+    clientId: ID
+}
+
+input MedplayaUpdateMessagesInput
+{
+    id: ID
+    question: GraphQLString
+    chatResponse: GraphQLString
+    clientId: ID
+}
+
+type Query
+{
+    medplayaFindMessage(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): MedplayaMessage
+
+    medplayaFindMessageById(
+        id: ID
+        constraint: QueryStatement
+    ): MedplayaMessage
+
+    medplayaGetMessages(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): [MedplayaMessage]!
+
+    medplayaPaginateMessages(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): Pagination!
+
+}
+
+type Mutation
+{
+    medplayaCreateMessage(
+        payload: MedplayaCreateMessageInput!
+    ): MedplayaMessage
+
+    medplayaCreateMessages(
+        payload: [MedplayaCreateMessageInput]!
+    ): Boolean!
+
+    medplayaUpdateMessageById(
+        payload: MedplayaUpdateMessageByIdInput!
+        constraint: QueryStatement
+    ): MedplayaMessage
+
+    medplayaUpdateMessages(
+        payload: MedplayaUpdateMessagesInput!
+        query: QueryStatement
+        constraint: QueryStatement
+    ): [MedplayaMessage]!
+
+    medplayaUpsertMessage(
+        payload: MedplayaUpdateMessageByIdInput!
+    ): MedplayaMessage
+
+    medplayaDeleteMessageById(
+        id: ID!
+        constraint: QueryStatement
+    ): MedplayaMessage
+
+    medplayaDeleteMessages(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): [MedplayaMessage]!
+
+}

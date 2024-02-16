@@ -1,0 +1,138 @@
+enum MedplayaClientStatus {
+    PENDDING
+    OK
+    NO_OK
+}
+
+
+type MedplayaClient
+{
+    id: ID!
+    name: GraphQLString!
+    lastname: GraphQLString!
+    username: GraphQLString!
+    checkin: GraphQLTimestamp!
+    checkout: GraphQLTimestamp!
+    code: GraphQLString!
+    room: GraphQLString!
+    status: MedplayaClientStatus
+    tags: [ID]
+    otherTags: [GraphQLString]
+    isActive: GraphQLBoolean!
+    amount: GraphQLInt
+    createdAt: GraphQLTimestamp
+    updatedAt: GraphQLTimestamp
+    deletedAt: GraphQLTimestamp
+}
+
+input MedplayaCreateClientInput
+{
+    id: ID!
+    name: GraphQLString!
+    lastname: GraphQLString!
+    username: GraphQLString!
+    checkin: GraphQLTimestamp!
+    checkout: GraphQLTimestamp!
+    code: GraphQLString!
+    room: GraphQLString!
+    status: MedplayaClientStatus
+    tags: [ID]
+    otherTags: [GraphQLString]
+    isActive: GraphQLBoolean!
+    amount: GraphQLInt
+}
+
+input MedplayaUpdateClientByIdInput
+{
+    id: ID!
+    name: GraphQLString
+    lastname: GraphQLString
+    username: GraphQLString
+    checkin: GraphQLTimestamp
+    checkout: GraphQLTimestamp
+    code: GraphQLString
+    room: GraphQLString
+    status: MedplayaClientStatus
+    tags: [ID]
+    otherTags: [GraphQLString]
+    isActive: GraphQLBoolean
+    amount: GraphQLInt
+}
+
+input MedplayaUpdateClientsInput
+{
+    id: ID
+    name: GraphQLString
+    lastname: GraphQLString
+    username: GraphQLString
+    checkin: GraphQLTimestamp
+    checkout: GraphQLTimestamp
+    code: GraphQLString
+    room: GraphQLString
+    status: MedplayaClientStatus
+    tags: [ID]
+    otherTags: [GraphQLString]
+    isActive: GraphQLBoolean
+    amount: GraphQLInt
+}
+
+type Query
+{
+    medplayaFindClient(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): MedplayaClient
+
+    medplayaFindClientById(
+        id: ID
+        constraint: QueryStatement
+    ): MedplayaClient
+
+    medplayaGetClients(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): [MedplayaClient]!
+
+    medplayaPaginateClients(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): Pagination!
+
+}
+
+type Mutation
+{
+    medplayaCreateClient(
+        payload: MedplayaCreateClientInput!
+    ): MedplayaClient
+
+    medplayaCreateClients(
+        payload: [MedplayaCreateClientInput]!
+    ): Boolean!
+
+    medplayaUpdateClientById(
+        payload: MedplayaUpdateClientByIdInput!
+        constraint: QueryStatement
+    ): MedplayaClient
+
+    medplayaUpdateClients(
+        payload: MedplayaUpdateClientsInput!
+        query: QueryStatement
+        constraint: QueryStatement
+    ): [MedplayaClient]!
+
+    medplayaUpsertClient(
+        payload: MedplayaUpdateClientByIdInput!
+    ): MedplayaClient
+
+    medplayaDeleteClientById(
+        id: ID!
+        constraint: QueryStatement
+    ): MedplayaClient
+
+    medplayaDeleteClients(
+        query: QueryStatement
+        constraint: QueryStatement
+    ): [MedplayaClient]!
+
+}

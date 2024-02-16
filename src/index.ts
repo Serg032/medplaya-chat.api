@@ -1,0 +1,13 @@
+export { MedplayaClient } from './@app/medplaya/client/domain/medplaya-client.aggregate';
+export { MedplayaClientModel } from './@app/medplaya/client';
+export { MedplayaClientResponse } from './@app/medplaya/client/domain/medplaya-client.response';
+export { MedplayaClientMapper } from './@app/medplaya/client/domain/medplaya-client.mapper';
+export { medplayaMockClientData } from './@app/medplaya/client/infrastructure/mock/medplaya-mock-client.data';
+export { MedplayaModule } from './@api/medplaya/medplaya.module';
+export { MedplayaClientDto } from './@api/medplaya/client/dto/medplaya-client.dto';
+export { MedplayaMessage } from './@app/medplaya/message/domain/medplaya-message.aggregate';
+export { MedplayaMessageModel } from './@app/medplaya/message';
+export { MedplayaMessageResponse } from './@app/medplaya/message/domain/medplaya-message.response';
+export { MedplayaMessageMapper } from './@app/medplaya/message/domain/medplaya-message.mapper';
+export { medplayaMockMessageData } from './@app/medplaya/message/infrastructure/mock/medplaya-mock-message.data';
+export { MedplayaMessageDto } from './@api/medplaya/message/dto/medplaya-message.dto';

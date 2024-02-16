@@ -1,0 +1,561 @@
+{
+    "info": {
+		"_postman_id"   : "d9bc3afc-fd40-5505-b57f-8f5d5118e01b",
+		"name"          : "@app - medplaya/client",
+		"schema"        : "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+			"name": "GraphQL - medplayaCreateClient",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($payload:MedplayaCreateClientInput!)\n{\n\tmedplayaCreateClient (payload:$payload)\n\t{\n\t\tid\n\t\tname\n\t\tlastname\n\t\tusername\n\t\tcheckin\n\t\tcheckout\n\t\tcode\n\t\troom\n\t\tstatus\n\t\ttags\n\t\totherTags\n\t\tisActive\n\t\tamount\n\t}\n}",
+                        "variables": "{\n\t\"payload\":\n\t{\n\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\t\"name\": \"Gorgeous Granite Pants\", \n\t\t\"lastname\": \"u7cxa69iklw4jn9iavfuk2r3jh5sgcqijtheyl4ygzx7ybjcloswebtgl006e7xy898028qleyr3kyvgx85z4fkuybnt7tzcix3zdqkuuogoz019v81o5s6mtrgsyn\", \n\t\t\"username\": \"u4oaten1v2ja7u660cg8lxztfifylw26ym774y7rfognf9dh21rysqgdrusqq2yusyscx569w0hwo4w886zkop0g7jj8pitutm1byo6q8u1bfwq4oxtywrlkjtfu9d\", \n\t\t\"checkin\": \"2024-02-16 04:57:08\", \n\t\t\"checkout\": \"2024-02-15 20:25:21\", \n\t\t\"code\": \"ubnawctw5n4alc5wt191ylbzhjmvbxqyazz7ppnlmk9vpm6jyw7bgsjtzhmm21\", \n\t\t\"room\": \"pn8jv\", \n\t\t\"status\": 'PENDDING', \n\t\t\"tags\": [], \n\t\t\"otherTags\": [], \n\t\t\"isActive\": false, \n\t\t\"amount\": 974638\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - medplayaCreateClients",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($payload:[MedplayaCreateClientInput]!)\n{\n\tmedplayaCreateClients (payload:$payload)\n}",
+						"variables": "{\n\t\"payload\":\n\t[\n\t\t{\n\t\t\t\"id\": \"16ab0d73-7cd0-4cfb-a7ca-f11af99d8ba5\", \n\t\t\t\"name\": \"Awesome Frozen Bike\", \n\t\t\t\"lastname\": \"e906s8u42a8eqh7y4yqdyqkbc8arbkhus61iseyclel8k9mrqhtszileygxrpffat07qnc56s0mmphh5nkxy8l49dvd2tpruocmbl8swnzffhnkhovvlcuma5i551a\", \n\t\t\t\"username\": \"a813x7w6ufk980ivtrtv88pfdh1xcgmd27ur7lvv6vj84z6838u4bboda8l5a95h2ssmjjfnf4kd5nglwalhrnc2yyh86lduucjqelvs77six311yd4uoagy1wb64d\", \n\t\t\t\"checkin\": \"2024-02-15 17:24:32\", \n\t\t\t\"checkout\": \"2024-02-15 19:08:04\", \n\t\t\t\"code\": \"e3bvewfh2b6lhv64db9kfzke56oxyhlgmwo41rmf26xx9er5y1flogyw8qbj8w\", \n\t\t\t\"room\": \"zi0g9\", \n\t\t\t\"status\": 'NO_OK', \n\t\t\t\"tags\": [], \n\t\t\t\"otherTags\": [], \n\t\t\t\"isActive\": false, \n\t\t\t\"amount\": 765958\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"b3d08823-5b06-4030-8896-6332405ba727\", \n\t\t\t\"name\": \"Awesome Steel Shoes\", \n\t\t\t\"lastname\": \"j98z00ggjvtn6rprpv1rh4dzavyg6u40tvl9lp6bjru0x9mldn1yrpes7xofa1av4v0j3poh9zmwdcrvg7xxsgexeelkiprgh3rcyc9gs4cnx90b3yqhxreqmc5fa6\", \n\t\t\t\"username\": \"h13f9gf0x88rni45bvfvowfmzq88heeksleicyxnqw3zkdv04t3hik12f5sui2mx0594bv0glhumw98tagwrtzwgclgsvwvb2or791vd03nk3yj5xfkm4weql744jq\", \n\t\t\t\"checkin\": \"2024-02-16 00:52:23\", \n\t\t\t\"checkout\": \"2024-02-15 14:17:38\", \n\t\t\t\"code\": \"jndz8sneqccpt689oc76qiud8dbcqd80d53c885e7nn6gx4m1rxev2im1ft8eq\", \n\t\t\t\"room\": \"tdm7d\", \n\t\t\t\"status\": 'PENDDING', \n\t\t\t\"tags\": [], \n\t\t\t\"otherTags\": [], \n\t\t\t\"isActive\": true, \n\t\t\t\"amount\": 783892\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"a6b6f292-72ba-41e2-8b9e-14d650577c9b\", \n\t\t\t\"name\": \"Ergonomic Granite Hat\", \n\t\t\t\"lastname\": \"6lpfy5ahnl9634enqr1e9zv8qi6a1vylxy9jknttwp5narguvotcodq06q9h4qppgwp532da6f5yhysrdgxuadjmn99ulxngsofy28nu1qtemb4tdzulfthwlac36f\", \n\t\t\t\"username\": \"s3kujpj3hvco0dpkyytiff84gobbzv5b766w81rj9fy07oqrw3gca03xg2dnzhwgn9mri3iisimodr1hta3yhbxmbh6s00sckoby60c0nprwqwacsikgvah0gl2708\", \n\t\t\t\"checkin\": \"2024-02-16 05:00:52\", \n\t\t\t\"checkout\": \"2024-02-16 13:45:15\", \n\t\t\t\"code\": \"l5j1xw1v60twtrs2xlb8kh5rl0znx1wuytgym8fiditgp50hdvqky6obzefsb2\", \n\t\t\t\"room\": \"6sug2\", \n\t\t\t\"status\": 'OK', \n\t\t\t\"tags\": [], \n\t\t\t\"otherTags\": [], \n\t\t\t\"isActive\": false, \n\t\t\t\"amount\": 805943\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"f29720b1-0c56-4101-ab90-12ef38d873dc\", \n\t\t\t\"name\": \"Unbranded Fresh Salad\", \n\t\t\t\"lastname\": \"202mmhs4yb8r6a0atqsgo2xonb5w207jqv7khcy8nkhkt5a9887lxoya7vf05tjf5bjfl87858j0dgt82wiax19xvehi4lspkam9c9xhxnkhdl5a59qa4wpld6orbi\", \n\t\t\t\"username\": \"q5u5xy20fbr8rmx6467juieri5lk1fka4ex6fsedv74whih7aa3hqof70982k3htn24ul36564dirc089kny9ta3ke6wp9nja2d6uvcgdkokm1xbrn2w4hgkr6bx0c\", \n\t\t\t\"checkin\": \"2024-02-16 05:25:04\", \n\t\t\t\"checkout\": \"2024-02-16 01:39:31\", \n\t\t\t\"code\": \"blbdvuaftde2bqe1a1hk3ag4ep3v5w6jqu0y91i7m5u9inzrju59a5nq7gmjjo\", \n\t\t\t\"room\": \"iwts3\", \n\t\t\t\"status\": 'PENDDING', \n\t\t\t\"tags\": [], \n\t\t\t\"otherTags\": [], \n\t\t\t\"isActive\": true, \n\t\t\t\"amount\": 786124\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"ad0e1ab7-214f-48a2-8cf7-ac4f59ae92b5\", \n\t\t\t\"name\": \"Generic Wooden Soap\", \n\t\t\t\"lastname\": \"3uzofa41aag586fjh85y7g316mvgnqq5qvbgy1h5srh05i0jeq5nauxlsm4sxa4xi5kc1d0hmq2pf71p7u8mfz14pwem0ddfukl8nwkh4rbl7lj1qwbpzihllset0i\", \n\t\t\t\"username\": \"o5uoz4xcq2uo89cbljwhycqsyt1tjpsfbflna0dwp8mvuvxnd35z9l3g22xz5hsdjfuvvjxy4a2ogl6v1whzvtl16ehwi187g37fgsypogfsslxr8e89lewv7qodyg\", \n\t\t\t\"checkin\": \"2024-02-15 15:23:33\", \n\t\t\t\"checkout\": \"2024-02-16 05:39:46\", \n\t\t\t\"code\": \"2jn69f8f5xmpb6xyexspr0ebthlj9xzdizbworu84da9983gsoqypal8lpw2xq\", \n\t\t\t\"room\": \"ln5rw\", \n\t\t\t\"status\": 'OK', \n\t\t\t\"tags\": [], \n\t\t\t\"otherTags\": [], \n\t\t\t\"isActive\": false, \n\t\t\t\"amount\": 428377\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"9a62a41d-5c1b-4a45-bd80-789709658972\", \n\t\t\t\"name\": \"Ergonomic Frozen Pizza\", \n\t\t\t\"lastname\": \"njxls62oikgibrxrqf61rkqajw0xj5zxdeehbtri5g63filnum5d3b9l7rb7rbhz5yuyuh1d9piyshl2rdxyk2j7iojdwxujryti3fa28u27e68uww2eehq1xq205n\", \n\t\t\t\"username\": \"684wg0mcmvo1fveofillk3lk6vxkmlhjys4llec13sa01ouqkt8s64eim172633y7d1n7xvxxhed3wqrfmdfnawart7hs60yvk30keewbl9ap8lf45j7wnzqgxboxd\", \n\t\t\t\"checkin\": \"2024-02-16 08:36:22\", \n\t\t\t\"checkout\": \"2024-02-16 10:57:55\", \n\t\t\t\"code\": \"uo7ygt243zbsd431zcq9vxheu6i2b86r06cm9834uk33nqg68h3kdr8bkyb9nc\", \n\t\t\t\"room\": \"4u8jl\", \n\t\t\t\"status\": 'OK', \n\t\t\t\"tags\": [], \n\t\t\t\"otherTags\": [], \n\t\t\t\"isActive\": false, \n\t\t\t\"amount\": 979251\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"709d5670-09ef-4047-aeb1-b9f8f3696843\", \n\t\t\t\"name\": \"Handcrafted Soft Keyboard\", \n\t\t\t\"lastname\": \"1j2sogr3fa3vflzvjdrbgk839ds1qa0b9qzf3jvyb05x6y5rag5fjt9cqqze1yma3x763s4prf1zh8j0pnp9mwcxzlh68znpbq8tw8d7zrj1psz4k5rxku8wgc883i\", \n\t\t\t\"username\": \"1ev6ig0nygvy346l5seq0kzmk5w0nsoq1wzbhm9ji4x2zx78o5sfh726wcee42knvql5v4mlgw2nm1bc9t9dhy6f5juxx80ycuqsg7unwfkh0qsst041ohqsmmauy0\", \n\t\t\t\"checkin\": \"2024-02-15 17:43:49\", \n\t\t\t\"checkout\": \"2024-02-15 23:39:56\", \n\t\t\t\"code\": \"e9l917ks5lflv5yctjk75o6kubcb3m4jak1r78784nztlmt73h1jxbeog8unub\", \n\t\t\t\"room\": \"jumai\", \n\t\t\t\"status\": 'PENDDING', \n\t\t\t\"tags\": [], \n\t\t\t\"otherTags\": [], \n\t\t\t\"isActive\": true, \n\t\t\t\"amount\": 741837\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"9c308b74-42d0-41a7-abb5-60a33599f5ad\", \n\t\t\t\"name\": \"Handcrafted Concrete Shoes\", \n\t\t\t\"lastname\": \"szzngoe22455mompxke8oefba7mvjayscvi1qg6hc28j5ff0tjh4mb11ozjfn5sudn18bfvas6a439ffqpghy0m43puvmb12lzor1267ehk75hw8l30qg474wu0qjn\", \n\t\t\t\"username\": \"p3pki6seb3ak0crxv75mjg4meu8ml3a803vc4fs71ba7i827l2nj9q2qx3v7we2e4mcjss5ontl5gg49k8j23ouzf9f8p5hpx0411al0sbtvj9hsqnlh7rvqg8myp6\", \n\t\t\t\"checkin\": \"2024-02-16 04:45:26\", \n\t\t\t\"checkout\": \"2024-02-15 19:36:21\", \n\t\t\t\"code\": \"qxzr19l72k4n4yxi05adw9dmi752q4iyb9p0hacwumyqwwejmapv8naoe6hgcj\", \n\t\t\t\"room\": \"ojfkl\", \n\t\t\t\"status\": 'OK', \n\t\t\t\"tags\": [], \n\t\t\t\"otherTags\": [], \n\t\t\t\"isActive\": true, \n\t\t\t\"amount\": 527973\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"d6b2f90f-9bb7-44d2-a853-587a52b8c97e\", \n\t\t\t\"name\": \"Licensed Rubber Chair\", \n\t\t\t\"lastname\": \"fa4x3qjccd2b2rifjncfkbhmsr5b3wprb4sa3khxxwc7bkzdrq3unpzl40h7tugejrqyvsrp2iiomty4haszj8v89of4gqb1eqa3e553xuu0avndqbp8onlwctq9xh\", \n\t\t\t\"username\": \"i95f5d0jsbt5zabiido74evlwf0ceel009feyxezcabxdfdqrtv7p2vxmg33ymp566wimthb8pxlf9bresbjwhyimanhxifxrbh7vknmx7otilxp6q3igkvki7lelc\", \n\t\t\t\"checkin\": \"2024-02-16 09:26:59\", \n\t\t\t\"checkout\": \"2024-02-15 19:26:13\", \n\t\t\t\"code\": \"iacmo33mm79ttjaob2adqsmvo6h246whdg2bd2erekkplvn33y8vfhvn0kdo8o\", \n\t\t\t\"room\": \"usm03\", \n\t\t\t\"status\": 'PENDDING', \n\t\t\t\"tags\": [], \n\t\t\t\"otherTags\": [], \n\t\t\t\"isActive\": true, \n\t\t\t\"amount\": 836035\n\t\t}, \n\t\t{\n\t\t\t\"id\": \"99ae71d9-fb6d-4d86-854f-e16f31894ae0\", \n\t\t\t\"name\": \"Gorgeous Granite Shirt\", \n\t\t\t\"lastname\": \"ihf1gvi310odaa6fy481kuqkkx6uyzj8u4g076blmdjwwo0l5fdvoesitrvumd2rzpts1lcuqp710crcoy39tkth83wmoxkw9xl95tjmeghicn3ada8r602dffptjf\", \n\t\t\t\"username\": \"1tos53mt29eq0hlixgyoo7mw1kefooell5dy15vdol6zo86mdhwnqblnwbkdpriri5zipjsg9s4kz1x46q2r2la85ivm5krfiq24g606ld4x0mawf9bbsc2cl5vvdg\", \n\t\t\t\"checkin\": \"2024-02-15 16:08:42\", \n\t\t\t\"checkout\": \"2024-02-16 08:14:08\", \n\t\t\t\"code\": \"bz101qihgabe9uu2cjptk8k5j0qvzpcphxz66m5xxgn1yu4bn8cou61z2j521v\", \n\t\t\t\"room\": \"nxt4a\", \n\t\t\t\"status\": 'OK', \n\t\t\t\"tags\": [], \n\t\t\t\"otherTags\": [], \n\t\t\t\"isActive\": true, \n\t\t\t\"amount\": 885014\n\t\t}\n\t]\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - medplayaPaginateClients",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($query:QueryStatement $constraint:QueryStatement)\n{\n\tmedplayaPaginateClients (query:$query constraint:$constraint)\n\t{\n\t\ttotal\n\t\tcount\n\t\trows\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"offset\": 0,\n\t\t\"limit\": 10\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - medplayaGetClients",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($query:QueryStatement)\n{\n\tmedplayaGetClients (query: $query)\n\t{\n\t\tid\n\t\tname\n\t\tlastname\n\t\tusername\n\t\tcheckin\n\t\tcheckout\n\t\tcode\n\t\troom\n\t\tstatus\n\t\ttags\n\t\totherTags\n\t\tisActive\n\t\tamount\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{ \n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - medplayaFindClient",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($query:QueryStatement)\n{\n\tmedplayaFindClient (query: $query)\n\t{\n\t\tid\n\t\tname\n\t\tlastname\n\t\tusername\n\t\tcheckin\n\t\tcheckout\n\t\tcode\n\t\troom\n\t\tstatus\n\t\ttags\n\t\totherTags\n\t\tisActive\n\t\tamount\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - medplayaFindClientById",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($id:ID)\n{\n\tmedplayaFindClientById (id:$id)\n\t{\n\t\tid\n\t\tname\n\t\tlastname\n\t\tusername\n\t\tcheckin\n\t\tcheckout\n\t\tcode\n\t\troom\n\t\tstatus\n\t\ttags\n\t\totherTags\n\t\tisActive\n\t\tamount\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - medplayaUpdateClient",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($payload:MedplayaUpdateClientInput!)\n{\n\tmedplayaUpdateClient (payload:$payload)\n\t{\n\t\tid\n\t\tname\n\t\tlastname\n\t\tusername\n\t\tcheckin\n\t\tcheckout\n\t\tcode\n\t\troom\n\t\tstatus\n\t\ttags\n\t\totherTags\n\t\tisActive\n\t\tamount\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"payload\":\n\t{\n\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\t\"name\": \"Rustic Metal Shoes\", \n\t\t\"lastname\": \"o97v59azbmie4g3mwjb88ycqfkftmpctqz82mkkaagt8632p311lwbtygvf313khwi4hz27evkwltmhesxivsjg3m7cvogwhvc5w2ge99sna9b3052hch9b58v68bp\", \n\t\t\"username\": \"0y71mdfmvo0nthi2xee80ck34pfira4yzg5igbcga1a26op5hluqr3r45n404hbn4v83a1fgt2c55iar0ug0ch35vngapdzkv1fqhtdrd3gvwxb1qp4r1mky9ua2ho\", \n\t\t\"checkin\": \"2024-02-15 23:17:00\", \n\t\t\"checkout\": \"2024-02-15 21:01:44\", \n\t\t\"code\": \"11w8jcg5if5fr9lj79fy9cl7iedvwinq7d4f3557rsp5ff3t5jkzysons8wtnn\", \n\t\t\"room\": \"swolj\", \n\t\t\"status\": 'OK', \n\t\t\"tags\": [], \n\t\t\"otherTags\": [], \n\t\t\"isActive\": false, \n\t\t\"amount\": 619506\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - medplayaDeleteClientById",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($id:ID!)\n{\n\tmedplayaDeleteClientById (id:$id)\n\t{\n\t\tid\n\t\tname\n\t\tlastname\n\t\tusername\n\t\tcheckin\n\t\tcheckout\n\t\tcode\n\t\troom\n\t\tstatus\n\t\ttags\n\t\totherTags\n\t\tisActive\n\t\tamount\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "GraphQL - medplayaDeleteClients",
+			"request": {
+				"method": "POST",
+				"header": [
+                ],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation ($query:QueryStatement)\n{\n\tmedplayaDeleteClients (query: $query)\n\t{\n\t\tid\n\t\tname\n\t\tlastname\n\t\tusername\n\t\tcheckin\n\t\tcheckout\n\t\tcode\n\t\troom\n\t\tstatus\n\t\ttags\n\t\totherTags\n\t\tisActive\n\t\tamount\n\t\tcreatedAt\n\t\tupdatedAt\n\t}\n}",
+						"variables": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\":\n\t\t\t{\n\t\t\t\t\"[substring]\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}"
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/graphql",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - medplaya/client/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key"   : "Content-Type",
+						"name"  : "Content-Type",
+						"type"  : "text",
+						"value" : "application/json"
+					}				],
+				"body": {
+					"mode"  : "raw",
+					"raw"   : "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\"name\": \"Handcrafted Frozen Ball\", \n\t\"lastname\": \"ffr16x23vi80dkmocc3f0j7pavkykdx003vxkxqvbvfgkkyj7tdh44tyg4uns620585wkq33qkko2jlfgrruaina0x10m640dmqd80o23dcthhc92ho0fhw20iet3q\", \n\t\"username\": \"i3rxyfimk9rv3yvy52obvgybbaqxxthljeomhg6d2bddfjd69q9jbnb7djll3ey39qa2chgg2ivwg6f67lf7wnkdiu4a7hjm7clfrtvh7l19fmdtb4uvb03hit0ros\", \n\t\"checkin\": \"2024-02-15 17:13:23\", \n\t\"checkout\": \"2024-02-16 05:08:22\", \n\t\"code\": \"hnjwm2o0stqhpm0ntx7b92vaebge9yogystwl50o810afo128lg94ztqusv30r\", \n\t\"room\": \"nau44\", \n\t\"status\": 'OK', \n\t\"tags\": [], \n\t\"otherTags\": [], \n\t\"isActive\": true, \n\t\"amount\": 917151\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/medplaya/client/create",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"medplaya",
+						"client",
+                        "create"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - medplaya/clients/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key"   : "Content-Type",
+						"name"  : "Content-Type",
+						"type"  : "text",
+						"value" : "application/json"
+					}				],
+				"body": {
+					"mode"  : "raw",
+					"raw"   : "[\n\t{\n\t\t\"id\": \"1748e61c-96cc-4db0-adff-bd869ce205cd\", \n\t\t\"name\": \"Fantastic Wooden Bacon\", \n\t\t\"lastname\": \"c38dfayv8j73lp4bslsiazgor7qiigp92ozy89qmo1rhhysqxid8jsbfntmfu8thbqso8a22el9pify927argfu2pkgrpgubnmiwh0e1u5p970vdv8zjuymc77q597\", \n\t\t\"username\": \"xr64jtr7vesjzyk053u5iibu25p4qyzjeqy41ndd7h5wjmz2ulh7c1e1yhvgphvdtmxee5d4ocydcos53m9e0i6mbqxgsjdz5jjekzs3bmzgn1b4mawgbov46n39vi\", \n\t\t\"checkin\": \"2024-02-15 23:37:09\", \n\t\t\"checkout\": \"2024-02-16 13:21:17\", \n\t\t\"code\": \"cgizgkqg16l3maswstvkbxzzgillnjwmn6dsdxfanonxn8wicvkrmsnrkreh76\", \n\t\t\"room\": \"mvyoi\", \n\t\t\"status\": 'NO_OK', \n\t\t\"tags\": [], \n\t\t\"otherTags\": [], \n\t\t\"isActive\": false, \n\t\t\"amount\": 219844\n\t}, \n\t{\n\t\t\"id\": \"d730ebf4-1ed4-4b46-ba08-2761ab5f5d37\", \n\t\t\"name\": \"Small Fresh Ball\", \n\t\t\"lastname\": \"65plmzqykgjl450ui3uhfqaog8p5c8pwrfohvby2yydvf7ovbbl4emsyzi1jx8r2ihnt5zvj43ffyvug81m5rn2gsqlqaitobiwh36z8eilltsndgate3qc6z8eqs7\", \n\t\t\"username\": \"r2em576mpix1ogq3a2g5gp7x5fdvth7qimjx1bro6c79k3p6yoi6bczap611g3zi13w9extyxbxh0wi94ia91vmr2i44ze0349tzvemnbexleyos1pvsejha0k7vjd\", \n\t\t\"checkin\": \"2024-02-15 14:58:21\", \n\t\t\"checkout\": \"2024-02-16 05:45:05\", \n\t\t\"code\": \"ejxvbpcbsqv9zp6b1xwnjxidacoanpaphetux08bvwqhfjtiyosa2vqq2hesjv\", \n\t\t\"room\": \"w2t24\", \n\t\t\"status\": 'OK', \n\t\t\"tags\": [], \n\t\t\"otherTags\": [], \n\t\t\"isActive\": true, \n\t\t\"amount\": 943603\n\t}, \n\t{\n\t\t\"id\": \"a0eef358-de7d-425a-8740-35cc2a3619c7\", \n\t\t\"name\": \"Incredible Wooden Pizza\", \n\t\t\"lastname\": \"r4bwhuivmh078dvwerug5tpn8bpn45op0nsh5z8ahsn2dkh87rvowqrwktm4wmre8k5safqqy3buiqwoi1m8yadtgf5ocbviwie0xhf995n384yt4e1kpbtjs3c4tg\", \n\t\t\"username\": \"j0vhtl82jshuj9hjpsmsmtues79kcw1j6c52e79zt40gi4rlxe14sjjn5enpunktybmim3zcs1vkgny85zcnol7qafxhl1lncyq4wk0b4lstw82qc9baojb765c8iw\", \n\t\t\"checkin\": \"2024-02-16 01:44:19\", \n\t\t\"checkout\": \"2024-02-15 18:20:45\", \n\t\t\"code\": \"0ld8gp50u0h4x3iyip8cdtn21n72ok1w694vyhbilqley7c4f1cgutbf5qlhgj\", \n\t\t\"room\": \"8ojgq\", \n\t\t\"status\": 'OK', \n\t\t\"tags\": [], \n\t\t\"otherTags\": [], \n\t\t\"isActive\": true, \n\t\t\"amount\": 621443\n\t}, \n\t{\n\t\t\"id\": \"eeb57c81-c782-4339-8041-58aaec568f6e\", \n\t\t\"name\": \"Tasty Cotton Gloves\", \n\t\t\"lastname\": \"24rhn8b4bflzle3ngupqe461381ekpxxz1vz34tk7fzxv5zz1dn1yrp6bd12jnxduzp818xp4brj541dobbi1qouwctvjuodqxzlch7jebgk1hufmdspx79viwc7bi\", \n\t\t\"username\": \"12d508t5ahe95wbmqcrdthv6ic5plqqsxmu6wg3e9box9ps4c97nb9unrkxha0m4riog2b0qk0lkaniags49friq303tpjy7qgtn85nrh3983jl3fn0mu07memiybf\", \n\t\t\"checkin\": \"2024-02-16 03:46:07\", \n\t\t\"checkout\": \"2024-02-16 04:08:00\", \n\t\t\"code\": \"7q76qjlxlb9lhxcyitui64tynwrccv8d8pkvhiuflaek9m7ibrcz9cdv93ukkp\", \n\t\t\"room\": \"sj12b\", \n\t\t\"status\": 'PENDDING', \n\t\t\"tags\": [], \n\t\t\"otherTags\": [], \n\t\t\"isActive\": false, \n\t\t\"amount\": 928848\n\t}, \n\t{\n\t\t\"id\": \"49082133-98ba-4584-99b4-932107640b90\", \n\t\t\"name\": \"Unbranded Soft Cheese\", \n\t\t\"lastname\": \"kf71id9gb5gd5jn1fztf6lrozvenbyggy33ccn15vpyepm8w7v5k70mhdihk41j2o5xs4uszhc9qi7pk5u2qiqseyv8e29e7n5n762t69uxq7wp2tmxkj7sgw6ao5u\", \n\t\t\"username\": \"lk800816h7ihi9vp5akumcn69f6laxf44ernze1me6flf1ahcz90tg9atjldbnqc7yn9xr7tdc81v3nogg8rf5ga5a88yobon4t0e36e92gulkyvfuiuc1dnamy2pv\", \n\t\t\"checkin\": \"2024-02-15 21:09:32\", \n\t\t\"checkout\": \"2024-02-16 12:13:07\", \n\t\t\"code\": \"is3mh4rtsbgkikurs5uuxihlezt1mokz0umni390u8lcem2v436d4afd4vmqm2\", \n\t\t\"room\": \"1obe7\", \n\t\t\"status\": 'PENDDING', \n\t\t\"tags\": [], \n\t\t\"otherTags\": [], \n\t\t\"isActive\": false, \n\t\t\"amount\": 928314\n\t}, \n\t{\n\t\t\"id\": \"83e4c600-d3d6-4225-87a7-8da328fb11fc\", \n\t\t\"name\": \"Licensed Concrete Soap\", \n\t\t\"lastname\": \"j182s3ggsna0r0wznyu97a48f1lee6ala052whdwpuvss4t4czavbme9g58tmejf1y4woqsigecz1jkpxhuqkqkvlhgiew7af8zdrkewzsky14vlvl1t1i9gljef9p\", \n\t\t\"username\": \"aq8lzntnp28lbtong89z83zzophi4ge3lpn4b9wx7lgdb9erxxm9hx5ke7fcthq1v3z03tb8ost156mb87f7ivd2pk923p9fh309xyz7q2xta6gy3ov6tu7l8o92w4\", \n\t\t\"checkin\": \"2024-02-15 14:54:55\", \n\t\t\"checkout\": \"2024-02-15 18:12:39\", \n\t\t\"code\": \"tj0su8uua1fnj8mbflsalff7cq6yvjtubptn9k17fhh2b9teefxe3dtgxhfmgo\", \n\t\t\"room\": \"j4u5c\", \n\t\t\"status\": 'NO_OK', \n\t\t\"tags\": [], \n\t\t\"otherTags\": [], \n\t\t\"isActive\": false, \n\t\t\"amount\": 733166\n\t}, \n\t{\n\t\t\"id\": \"29958cb9-dc90-4be3-92c3-83120c137d07\", \n\t\t\"name\": \"Awesome Wooden Fish\", \n\t\t\"lastname\": \"rz3i3uld7vgitqtur6d2ecy0phqy7fr0h690gykne851mcmss0v4444r0w606mky5qsb05p2leq7xu3rpujgdqafecohqvdm7e0o4sv2fgfxo71wq4hv0b6cv1evy7\", \n\t\t\"username\": \"dcxqy1h68s0sob98e34ie6kjo1u5v1xkw8lw8aa5gkfkxxvvn8byj8i05tqzii1oi1w1gkvnn0ydpbbxsiiwfhaqaym0e7ynu3h82o0naddt4z7izrmcqog324pold\", \n\t\t\"checkin\": \"2024-02-15 22:25:39\", \n\t\t\"checkout\": \"2024-02-16 08:57:06\", \n\t\t\"code\": \"2r1wgkfey74csb20g63osjb73th03h966b4o1bl5ao6jnez9bp6b02s5z6x1vq\", \n\t\t\"room\": \"edur6\", \n\t\t\"status\": 'OK', \n\t\t\"tags\": [], \n\t\t\"otherTags\": [], \n\t\t\"isActive\": false, \n\t\t\"amount\": 521775\n\t}, \n\t{\n\t\t\"id\": \"bcbbe5db-5ccc-4674-a93d-b0a935a3be18\", \n\t\t\"name\": \"Practical Soft Towels\", \n\t\t\"lastname\": \"de808og4tn398kqnqrvmlo690aj408y9kxkwr5356j3453hw3z256t6s1jiqdk2v3ekftetyazs3l263qfszfn9iclfiaw17lif7044655dxeylq66euuv3kp4xgl4\", \n\t\t\"username\": \"ge2lro2jl2wjmoxlwwe6qikvp45a64suubjpi06a8l1e13pw15owukus917ce0zc766dynz9jhe73qimesoaosq5rxz5jt044g31d5zxpbd56q5k2vd8t5k5zzlaab\", \n\t\t\"checkin\": \"2024-02-15 20:31:02\", \n\t\t\"checkout\": \"2024-02-15 17:11:57\", \n\t\t\"code\": \"lx9p9ju86byifcgi27zi9smanyq8rwtsz4uc2h1ncuhx9wr3mfvyyi6272pues\", \n\t\t\"room\": \"562ym\", \n\t\t\"status\": 'OK', \n\t\t\"tags\": [], \n\t\t\"otherTags\": [], \n\t\t\"isActive\": false, \n\t\t\"amount\": 909991\n\t}, \n\t{\n\t\t\"id\": \"98cd2eae-c899-4e1f-9ecb-1048558a2c45\", \n\t\t\"name\": \"Sleek Metal Tuna\", \n\t\t\"lastname\": \"fi06gx418pacxhqw98s3x7bg37o3lgkuonkyroqlws51o0yqsg7q9dokecla2qj9f6ilynrez5vrc6kdhtrfh7fzi5u8aahbpvw4cdgw3bfg4em448xxkkepn4tkxh\", \n\t\t\"username\": \"uvtu25fdd7ftv1om67a9zu9ooz4966ceu7254t7b6b3ms2xqq3d4o9z706cdbqyoe5pu1v9bdono7qc6w4xt3opj3bm7f39gyhpwcqx6aqj6nt4l20k1pmfaklepru\", \n\t\t\"checkin\": \"2024-02-16 03:17:21\", \n\t\t\"checkout\": \"2024-02-15 23:34:28\", \n\t\t\"code\": \"u6owepnhscm13186ptv4d5xrf27nkz83rjvf7gw6k8cqcswcjyvp52oemanh3p\", \n\t\t\"room\": \"hu4ay\", \n\t\t\"status\": 'PENDDING', \n\t\t\"tags\": [], \n\t\t\"otherTags\": [], \n\t\t\"isActive\": true, \n\t\t\"amount\": 164045\n\t}, \n\t{\n\t\t\"id\": \"dd2449e9-c160-48d5-ae34-162c9798716c\", \n\t\t\"name\": \"Unbranded Cotton Bike\", \n\t\t\"lastname\": \"7qdod6cpdlq8j9p8nyxwu74wqgvbmjcjkxj7h0epi9zbwg9g5a6iu45li2ejgfnhrnpciyn1offfmbr9hydo9p64y8dw68yxunklu0fd4v6v9rwfojdre0ug5tw8gw\", \n\t\t\"username\": \"brs415j4qztwxsjbb6h7ztutye8n6s65mlzegmeekxcghdreel4ar6zg32lmr4mur4iuvh5o3qdep6ocr41y179ngqm7q8tmn4wwm6vjs947mzv8d8kyouhjhhcvts\", \n\t\t\"checkin\": \"2024-02-16 00:21:59\", \n\t\t\"checkout\": \"2024-02-15 18:45:33\", \n\t\t\"code\": \"58xliziopq8b7zbel66irjvysrbk716wf6mpr011vkcia19luj9nnhw1s9zjex\", \n\t\t\"room\": \"4b6sl\", \n\t\t\"status\": 'OK', \n\t\t\"tags\": [], \n\t\t\"otherTags\": [], \n\t\t\"isActive\": true, \n\t\t\"amount\": 803956\n\t}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/medplaya/clients/create",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"medplaya",
+						"clients",
+                        "create"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - medplaya/clients/paginate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"offset\": 0,\n\t\t\"limit\": 10\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/medplaya/clients/paginate",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"medplaya",
+                        "clients",
+                        "paginate"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - medplaya/clients/get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{ \n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/medplaya/clients/get",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"medplaya",
+						"clients",
+                        "get"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - medplaya/client/find",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\"\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/medplaya/client/find",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"medplaya",
+						"client",
+                        "find"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - medplaya/client/find/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/medplaya/client/find/5b19d6ac-4081-573b-96b3-56964d5326a8",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"medplaya",
+						"client",
+                        "find",
+						"5b19d6ac-4081-573b-96b3-56964d5326a8"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - medplaya/client/update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw"   : "{\n\t\"id\": \"5b19d6ac-4081-573b-96b3-56964d5326a8\", \n\t\"name\": \"Gorgeous Cotton Ball\", \n\t\"lastname\": \"sodk0mt7w10rw1n8m8yy47cy6y48e5u2sunwgmeg1k9fugybtlas8otflexxe3xsop2kp6tqwbajylv5muanh3hzszgrq1yzaq7g4ta7nksfdwy95f50lli1rvpx18\", \n\t\"username\": \"z2ye4vcphxk3sza0mnw2uj67x5g9hgb93frx2kwy3f21lbk67kgozib724o4j75g37vfwo932p8padc9n22i5wnd2d0qht937577qtuqipokkfh21cd4vh575z2whu\", \n\t\"checkin\": \"2024-02-16 02:20:53\", \n\t\"checkout\": \"2024-02-15 17:26:55\", \n\t\"code\": \"pl4uyl3ic81j8s8possekb3d71fx5vr1hbkwehw7qjsgw3amwcw3lhj0pu50m3\", \n\t\"room\": \"zmefi\", \n\t\"status\": 'PENDDING', \n\t\"tags\": [], \n\t\"otherTags\": [], \n\t\"isActive\": false, \n\t\"amount\": 986219\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/medplaya/client/update",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"medplaya",
+						"client",
+                        "update"
+					]
+				}
+			},
+			"response": []
+        },
+        {
+			"name": "REST - medplaya/client/delete/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/medplaya/client/delete/5b19d6ac-4081-573b-96b3-56964d5326a8",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"medplaya",
+						"client",
+                        "delete",
+						"5b19d6ac-4081-573b-96b3-56964d5326a8"
+					]
+				}
+			},
+			"response": []
+		},
+        {
+			"name": "REST - medplaya/clients/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\":\n\t{\n\t\t\"where\":\n\t\t{\n\t\t\t\"id\":\n\t\t\t{\n\t\t\t\t\"[substring]\": \"\"\n\t\t\t}\n\t\t}\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/medplaya/clients/delete",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"medplaya",
+						"clients",
+                        "delete"
+					]
+				}
+			},
+			"response": []
+		}
+    ],
+    "variable": [
+		{
+			"id": "d9bc3afc-fd40-5505-b57f-8f5d5118e01b",
+			"key": "URL",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+version: 0.0.1
+boundedContextName: medplaya
+moduleName: message
+moduleNames: messages
+aggregateName: MedplayaMessage
+hasOAuth: false
+hasTenant: false
+hasAuditing: false
+front:
+  solidIcon: mat_solid:language
+  outlineIcon: mat_outline:language
+aggregateProperties:
+  - name: id
+    type: id
+    primaryKey: true
+    length: 36
+    nullable: false
+  - name: question
+    type: varchar
+    maxLength: 2046
+    nullable: false
+  - name: chatResponse
+    type: varchar
+    maxLength: 2046
+    nullable: false
+  - name: clientId
+    type: id
+    length: 36
+    nullable: false
+    relationship:
+      type: many-to-one
+      aggregateName: MedplayaClient
+      modulePath: medplaya/client
+      key: id
+      field: client
+      avoidConstraint: true
+  - name: createdAt
+    type: timestamp
+    nullable: true
+  - name: updatedAt
+    type: timestamp
+    nullable: true
+  - name: deletedAt
+    type: timestamp
+    nullable: true

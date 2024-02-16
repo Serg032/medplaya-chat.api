@@ -1,0 +1,101 @@
+import { MedplayaAddClientsContextEvent, MedplayaClient, MedplayaIClientRepository } from '@app/medplaya/client';
+import {
+    MedplayaClientAmount,
+    MedplayaClientCheckin,
+    MedplayaClientCheckout,
+    MedplayaClientCode,
+    MedplayaClientCreatedAt,
+    MedplayaClientDeletedAt,
+    MedplayaClientId,
+    MedplayaClientIsActive,
+    MedplayaClientLastname,
+    MedplayaClientName,
+    MedplayaClientOtherTags,
+    MedplayaClientRoom,
+    MedplayaClientStatus,
+    MedplayaClientTags,
+    MedplayaClientUpdatedAt,
+    MedplayaClientUsername,
+} from '@app/medplaya/client/domain/value-objects';
+import { CQMetadata, QueryStatement } from '@aurorajs.dev/core';
+import { Injectable } from '@nestjs/common';
+import { EventPublisher } from '@nestjs/cqrs';
+
+@Injectable()
+export class MedplayaUpdateAndIncrementClientsService
+{
+    constructor(
+        private readonly publisher: EventPublisher,
+        private readonly repository: MedplayaIClientRepository,
+    ) {}
+
+    async main(
+        payload: {
+            id?: MedplayaClientId;
+            name?: MedplayaClientName;
+            lastname?: MedplayaClientLastname;
+            username?: MedplayaClientUsername;
+            checkin?: MedplayaClientCheckin;
+            checkout?: MedplayaClientCheckout;
+            code?: MedplayaClientCode;
+            room?: MedplayaClientRoom;
+            status?: MedplayaClientStatus;
+            tags?: MedplayaClientTags;
+            otherTags?: MedplayaClientOtherTags;
+            isActive?: MedplayaClientIsActive;
+            amount?: MedplayaClientAmount;
+        },
+        queryStatement?: QueryStatement,
+        constraint?: QueryStatement,
+        cQMetadata?: CQMetadata,
+    ): Promise<void>
+    {
+        // create aggregate with factory pattern
+        const client = MedplayaClient.register(
+            payload.id,
+            payload.name,
+            payload.lastname,
+            payload.username,
+            payload.checkin,
+            payload.checkout,
+            payload.code,
+            payload.room,
+            payload.status,
+            payload.tags,
+            payload.otherTags,
+            payload.isActive,
+            payload.amount,
+            null, // createdAt
+            new MedplayaClientUpdatedAt({ currentTimestamp: true }),
+            null, // deletedAt
+        );
+
+        // update and increment
+        await this.repository.updateAndIncrement(
+            client,
+            {
+                queryStatement,
+                constraint,
+                cQMetadata,
+                updateAndIncrementOptions: cQMetadata?.repositoryOptions,
+            },
+        );
+
+        // get objects to delete
+        const clients = await this.repository.get(
+            {
+                queryStatement,
+                constraint,
+                cQMetadata,
+            },
+        );
+
+        // merge EventBus methods with object returned by the repository, to be able to apply and commit events
+        const clientsRegister = this.publisher.mergeObjectContext(
+            new MedplayaAddClientsContextEvent(clients),
+        );
+
+        clientsRegister.updatedAndIncremented(); // apply event to model events
+        clientsRegister.commit(); // commit all events of model
+    }
+}

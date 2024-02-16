@@ -1,0 +1,54 @@
+import { IamPaginateBoundedContextsController, IamPaginateBoundedContextsHandler } from '@api/iam/bounded-context';
+import { iamMockBoundedContextData } from '@app/iam/bounded-context';
+import { Test, TestingModule } from '@nestjs/testing';
+
+describe('IamPaginateBoundedContextsController', () =>
+{
+    let controller: IamPaginateBoundedContextsController;
+    let handler: IamPaginateBoundedContextsHandler;
+
+    beforeAll(async () =>
+    {
+        const module: TestingModule = await Test.createTestingModule({
+            imports: [
+            ],
+            controllers: [
+                IamPaginateBoundedContextsController,
+            ],
+            providers: [
+                {
+                    provide : IamPaginateBoundedContextsHandler,
+                    useValue: {
+                        main: () => { /**/ },
+                    },
+                },
+            ],
+        })
+            .compile();
+
+        controller = module.get<IamPaginateBoundedContextsController>(IamPaginateBoundedContextsController);
+        handler = module.get<IamPaginateBoundedContextsHandler>(IamPaginateBoundedContextsHandler);
+    });
+
+    describe('main', () =>
+    {
+        test('IamPaginateBoundedContextsController should be defined', () =>
+        {
+            expect(controller).toBeDefined();
+        });
+
+        test('should return a iamMockBoundedContextData', async () =>
+        {
+            jest.spyOn(handler, 'main').mockImplementation(() => new Promise(resolve => resolve({
+                total: 5,
+                count: 5,
+                rows : iamMockBoundedContextData,
+            })));
+            expect(await controller.main()).toStrictEqual({
+                total: 5,
+                count: 5,
+                rows : iamMockBoundedContextData,
+            });
+        });
+    });
+});

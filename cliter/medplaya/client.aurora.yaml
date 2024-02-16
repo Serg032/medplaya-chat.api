@@ -1,0 +1,80 @@
+version: 0.0.1
+boundedContextName: medplaya
+moduleName: client
+moduleNames: clients
+aggregateName: MedplayaClient
+hasOAuth: false
+hasTenant: false
+hasAuditing: false
+front:
+  solidIcon: mat_solid:language
+  outlineIcon: mat_outline:language
+aggregateProperties:
+  - name: id
+    type: id
+    primaryKey: true
+    length: 36
+    nullable: false
+  - name: name
+    type: varchar
+    maxLength: 127
+    nullable: false
+  - name: lastname
+    type: varchar
+    maxLength: 127
+    nullable: false
+  - name: username
+    type: varchar
+    maxLength: 127
+    nullable: false
+    index: unique
+  - name: checkin
+    type: timestamp
+    nullable: false
+  - name: checkout
+    type: timestamp
+    nullable: false
+  - name: code
+    type: varchar
+    maxLength: 63
+    nullable: false
+    index: unique
+  - name: room
+    type: varchar
+    maxLength: 6
+    nullable: false
+  - name: status
+    type: enum
+    enumOptions:
+      - PENDDING
+      - OK
+      - NO_OK
+    index: index
+    nullable: true
+  - name: tags
+    type: array
+    arrayOptions:
+      type: id
+      maxLength: 36
+    nullable: true
+  - name: otherTags
+    type: array
+    arrayOptions:
+      type: varchar
+      maxLength: 63
+    nullable: true
+  - name: isActive
+    type: boolean
+    nullable: false
+  - name: amount
+    type: int
+    nullable: true
+  - name: createdAt
+    type: timestamp
+    nullable: true
+  - name: updatedAt
+    type: timestamp
+    nullable: true
+  - name: deletedAt
+    type: timestamp
+    nullable: true
